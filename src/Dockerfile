@@ -37,6 +37,7 @@ VOLUME $OSM_CACHE_DIR
 COPY . /
 
 RUN cd /etc/rdma && \
+    patch -p0 < rdma.conf.patch && \
     patch -p0 < opensm.conf.patch
 
 ENTRYPOINT ["/start.sh"]
