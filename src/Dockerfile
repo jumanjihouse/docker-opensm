@@ -5,6 +5,7 @@ ENV OPENSM_RPM_VERSION="3.3.19-1.el7.x86_64"
 
 RUN yum -y install \
       opensm-${OPENSM_RPM_VERSION} \
+      patch \
       && \
     yum clean all
 
@@ -34,6 +35,9 @@ VOLUME $OSM_TMP_DIR
 VOLUME $OSM_CACHE_DIR
 
 COPY . /
+
+RUN cd /etc/rdma && \
+    patch -p0 < opensm.conf.patch
 
 ENTRYPOINT ["/start.sh"]
 

@@ -1,0 +1,11 @@
+--- opensm.conf.orig	2016-02-14 20:48:24.170674882 +0000
++++ opensm.conf	2016-02-14 20:49:28.043859597 +0000
+@@ -248,7 +248,7 @@
+ ignore_other_sm FALSE
+ 
+ # Timeout in [msec] between two polls of active master SM
+-sminfo_polling_timeout 10000
++sminfo_polling_timeout 5000
+ 
+ # Number of failing polls of remote SM that declares it dead
+ polling_retry_number 4
