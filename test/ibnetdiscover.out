@@ -1,0 +1,61 @@
+[root@td-lss01 /]# ibnetdiscover -f
+#
+# Topology file: generated on Mon Feb 15 00:01:15 2016
+#
+# Initiated from node 0002c90300071da8 port 0002c90300071da9
+
+vendid=0x2c9
+devid=0xbd36
+sysimgguid=0x2264ffff34e9c8
+switchguid=0x2264ffff34e9c8(2264ffff34e9c8)
+Switch  32 "S-002264ffff34e9c8"         # "Infiniscale-IV Mellanox Technologies" base port 0 lid 10 lmc 0
+[1]     "S-002264ffff34e9b8"[1]         # "Infiniscale-IV Mellanox Technologies" lid 9 4xQDR s=4 w=2 v=4
+[2]     "S-002264ffff34e9b8"[2]         # "Infiniscale-IV Mellanox Technologies" lid 9 4xQDR s=4 w=2 v=4
+[17]    "H-24be05ffff891080"[2](24be05ffff891082)               # "TD-WSS01" lid 7 4xQDR s=4 w=2 v=4
+[18]    "H-24be05ffff891060"[2](24be05ffff891062)               # "TD-WSS02" lid 5 4xQDR s=4 w=2 v=4
+[19]    "H-0002c9030007213c"[2](2c9030007213e)          # "td-lss02 mlx4_0" lid 3 4xQDR s=4 w=2 v=4
+[22]    "H-0002c90300071da8"[2](2c90300071daa)          # "MT25408 ConnectX Mellanox Technologies" lid 8 4xQDR s=4 w=2 v=4
+
+vendid=0x2c9
+devid=0xbd36
+sysimgguid=0x2264ffff34e9b8
+switchguid=0x2264ffff34e9b8(2264ffff34e9b8)
+Switch  32 "S-002264ffff34e9b8"         # "Infiniscale-IV Mellanox Technologies" base port 0 lid 9 lmc 0
+[1]     "S-002264ffff34e9c8"[1]         # "Infiniscale-IV Mellanox Technologies" lid 10 4xQDR s=4 w=2 v=4
+[2]     "S-002264ffff34e9c8"[2]         # "Infiniscale-IV Mellanox Technologies" lid 10 4xQDR s=4 w=2 v=4
+[17]    "H-24be05ffff891080"[1](24be05ffff891081)               # "TD-WSS01" lid 6 4xQDR s=4 w=2 v=4
+[18]    "H-24be05ffff891060"[1](24be05ffff891061)               # "TD-WSS02" lid 4 4xQDR s=4 w=2 v=4
+[19]    "H-0002c9030007213c"[1](2c9030007213d)          # "td-lss02 mlx4_0" lid 2 4xQDR s=4 w=2 v=4
+[22]    "H-0002c90300071da8"[1](2c90300071da9)          # "MT25408 ConnectX Mellanox Technologies" lid 1 4xQDR s=4 w=2 v=4
+
+vendid=0x2c9
+devid=0x673c
+sysimgguid=0x2c9030007213f
+caguid=0x2c9030007213c
+Ca      2 "H-0002c9030007213c"          # "td-lss02 mlx4_0"
+[1](2c9030007213d)      "S-002264ffff34e9b8"[19]                # lid 2 lmc 0 "Infiniscale-IV Mellanox Technologies" lid 9 4xQDR s=4 w=2 v=4
+[2](2c9030007213e)      "S-002264ffff34e9c8"[19]                # lid 3 lmc 0 "Infiniscale-IV Mellanox Technologies" lid 10 4xQDR s=4 w=2 v=4
+
+vendid=0x2c9
+devid=0x1003
+sysimgguid=0x24be05ffff891063
+caguid=0x24be05ffff891060
+Ca      2 "H-24be05ffff891060"          # "TD-WSS02"
+[1](24be05ffff891061)   "S-002264ffff34e9b8"[18]                # lid 4 lmc 0 "Infiniscale-IV Mellanox Technologies" lid 9 4xQDR s=4 w=2 v=2
+[2](24be05ffff891062)   "S-002264ffff34e9c8"[18]                # lid 5 lmc 0 "Infiniscale-IV Mellanox Technologies" lid 10 4xQDR s=4 w=2 v=2
+
+vendid=0x2c9
+devid=0x1003
+sysimgguid=0x24be05ffff891083
+caguid=0x24be05ffff891080
+Ca      2 "H-24be05ffff891080"          # "TD-WSS01"
+[1](24be05ffff891081)   "S-002264ffff34e9b8"[17]                # lid 6 lmc 0 "Infiniscale-IV Mellanox Technologies" lid 9 4xQDR s=4 w=2 v=2
+[2](24be05ffff891082)   "S-002264ffff34e9c8"[17]                # lid 7 lmc 0 "Infiniscale-IV Mellanox Technologies" lid 10 4xQDR s=4 w=2 v=2
+
+vendid=0x2c9
+devid=0x673c
+sysimgguid=0x2c90300071dab
+caguid=0x2c90300071da8
+Ca      2 "H-0002c90300071da8"          # "MT25408 ConnectX Mellanox Technologies"
+[1](2c90300071da9)      "S-002264ffff34e9b8"[22]                # lid 1 lmc 0 "Infiniscale-IV Mellanox Technologies" lid 9 4xQDR s=4 w=2 v=3
+[2](2c90300071daa)      "S-002264ffff34e9c8"[22]                # lid 8 lmc 0 "Infiniscale-IV Mellanox Technologies" lid 10 4xQDR s=4 w=2 v=3

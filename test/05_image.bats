@@ -17,3 +17,13 @@
   run docker run --entrypoint cat opensm /etc/rdma/rdma.conf
   [[ ${output} =~ 'ISERT_LOAD=no' ]]
 }
+
+@test "image contains infiniband-diags package" {
+  run docker run --entrypoint rpm opensm -q infiniband-diags
+  [ ${status} -eq 0 ]
+}
+
+@test "image does not contain doc files" {
+  run docker run --entrypoint find opensm /usr/share/man/ -type f
+  [[ ${#lines[@]} ]]
+}
