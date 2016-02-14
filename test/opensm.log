@@ -1,0 +1,978 @@
+-------------------------------------------------
+OpenSM 3.3.19
+Config file is `/etc/rdma/opensm.conf`:
+ Reading Cached Option File: /etc/rdma/opensm.conf
+ Loading Cached Option:sminfo_polling_timeout = 5000
+Command Line Arguments:
+ Priority = 15
+ verbose option -D = 0x7
+ Log File: stdout
+-------------------------------------------------
+Feb 14 20:27:55 897827 [DB9740] 0x07 -> OpenSM 3.3.19
+Feb 14 20:27:55 897962 [DB9740] 0x80 -> OpenSM 3.3.19
+Feb 14 20:27:55 898262 [DB9740] 0x02 -> osm_vendor_init: 1000 pending umads specified
+Using default GUID 0x2c90300071da9
+Feb 14 20:27:55 918485 [DB9740] 0x80 -> Entering DISCOVERING state
+Feb 14 20:27:55 918494 [DB9740] 0x04 -> osm_report_sm_state:
+
+
+******************************************************************
+***************** ENTERING SM DISCOVERING STATE ******************
+******************************************************************
+
+
+Feb 14 20:27:55 918529 [DB9740] 0x04 -> osm_perfmgr_init: Initializing PerfMgr
+Feb 14 20:27:55 918562 [DB9740] 0x04 -> osm_sm_mad_ctrl_bind: Binding to port 0x2c90300071da9
+Feb 14 20:27:55 918566 [DB9740] 0x02 -> osm_vendor_bind: Mgmt class 0x81 binding to port GUID 0x2c90300071da9
+Feb 14 20:27:55 957191 [DB9740] 0x04 -> osm_sa_mad_ctrl_bind: Binding to port GUID 0x2c90300071da9
+Feb 14 20:27:55 957203 [DB9740] 0x02 -> osm_vendor_bind: Mgmt class 0x03 binding to port GUID 0x2c90300071da9
+Feb 14 20:27:55 957231 [DB9740] 0x04 -> osm_perfmgr_bind: Binding to port GUID 0x2c90300071da9
+Feb 14 20:27:55 957238 [DB9740] 0x02 -> osm_vendor_bind: Mgmt class 0x04 binding to port GUID 0x2c90300071da9
+Feb 14 20:27:55 957273 [DB9740] 0x04 -> osm_congestion_control_bind: Binding to port GUID 0x2c90300071da9
+Feb 14 20:27:55 957278 [DB9740] 0x02 -> osm_vendor_bind: Mgmt class 0x21 binding to port GUID 0x2c90300071da9
+Feb 14 20:27:55 957301 [DB9740] 0x02 -> osm_opensm_bind: Setting IS_SM on port 0x0002c90300071da9
+Feb 14 20:27:55 957748 [FA96A700] 0x04 -> state_mgr_sweep_hop_0:
+
+
+******************************************************************
+********************* INITIATING HEAVY SWEEP *********************
+******************************************************************
+
+
+Feb 14 20:27:55 957864 [FE171700] 0x04 -> Received SMP on a 0 hop path: Initial path = 0, Return path  = 0
+Feb 14 20:27:55 957873 [FE171700] 0x04 -> ni_rcv_process_new: Discovered new Channel Adapter node,
+				GUID 0x2c90300071da8, TID 0x1234
+Feb 14 20:27:55 958106 [FF173700] 0x04 -> nd_rcv_process_nd: Node 0x2c90300071da8, Description = MT25408 ConnectX Mellanox Technologies
+Feb 14 20:27:55 958121 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 1 with GUID 0x2c90300071da9 for parent node GUID 0x2c90300071da8, TID 0x1236
+Feb 14 20:27:55 958135 [FC96E700] 0x04 -> pi_rcv_process_endport: Setting endport minimal rate to:7 defined by port:0x2c90300071da9
+Feb 14 20:27:55 958137 [FC96E700] 0x04 -> pi_rcv_process_endport: Setting endport minimal data VLs to:4 defined by port:0x2c90300071da9
+Feb 14 20:27:55 958289 [FD16F700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 1 with GUID 0x2c90300071da9 for parent node GUID 0x2c90300071da8, TID 0x1237
+Feb 14 20:27:55 958395 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:1 port_num 1 with GUID 0x2c90300071da9 for parent node GUID 0x2c90300071da8, TID 0x1238
+Feb 14 20:27:55 958412 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:3 port_num 1 with GUID 0x2c90300071da9 for parent node GUID 0x2c90300071da8, TID 0x123a
+Feb 14 20:27:55 958424 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:2 port_num 1 with GUID 0x2c90300071da9 for parent node GUID 0x2c90300071da8, TID 0x1239
+Feb 14 20:27:55 958593 [FB96C700] 0x04 -> Received SMP on a 1 hop path: Initial path = 0,1, Return path  = 0,22
+Feb 14 20:27:55 958599 [FB96C700] 0x04 -> ni_rcv_process_new: Discovered new Switch node,
+				GUID 0x2264ffff34e9b8, TID 0x123b
+Feb 14 20:27:55 958779 [FE171700] 0x04 -> nd_rcv_process_nd: Node 0x2264ffff34e9b8, Description = Infiniscale-IV Mellanox Technologies
+Feb 14 20:27:55 958805 [FF173700] 0x04 -> si_rcv_process_new: Subnet max multicast lid is 0xCFFF
+Feb 14 20:27:55 958867 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 0 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x123e
+Feb 14 20:27:55 959374 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 1 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x123f
+Feb 14 20:27:55 959797 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 2 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1240
+Feb 14 20:27:55 960336 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 3 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1241
+Feb 14 20:27:55 960687 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 4 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1242
+Feb 14 20:27:55 961099 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 5 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1243
+Feb 14 20:27:55 961545 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 6 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1244
+Feb 14 20:27:55 962013 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 7 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1245
+Feb 14 20:27:55 962367 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 8 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1246
+Feb 14 20:27:55 962848 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 9 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1247
+Feb 14 20:27:55 963266 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 10 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1248
+Feb 14 20:27:55 963675 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 11 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1249
+Feb 14 20:27:55 964125 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 12 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x124a
+Feb 14 20:27:55 964556 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 13 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x124b
+Feb 14 20:27:55 964944 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 14 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x124c
+Feb 14 20:27:55 965458 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 15 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x124d
+Feb 14 20:27:55 965787 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 16 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x124e
+Feb 14 20:27:55 966339 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 17 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x124f
+Feb 14 20:27:55 966748 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 18 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1250
+Feb 14 20:27:55 967115 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 19 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1251
+Feb 14 20:27:55 967544 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 20 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1252
+Feb 14 20:27:55 967959 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 21 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1253
+Feb 14 20:27:55 968410 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 22 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1254
+Feb 14 20:27:55 968874 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 23 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1255
+Feb 14 20:27:55 969264 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 24 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1256
+Feb 14 20:27:55 969758 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 25 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1257
+Feb 14 20:27:55 970155 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 26 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1258
+Feb 14 20:27:55 970659 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 27 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1259
+Feb 14 20:27:55 971089 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 28 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x125a
+Feb 14 20:27:55 971517 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 29 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x125b
+Feb 14 20:27:55 971945 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 30 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x125c
+Feb 14 20:27:55 972314 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 31 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x125d
+Feb 14 20:27:55 972749 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 32 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x125e
+Feb 14 20:27:55 972779 [FC96E700] 0x04 -> Received SMP on a 2 hop path: Initial path = 0,1,1, Return path  = 0,22,1
+Feb 14 20:27:55 972798 [FC96E700] 0x04 -> ni_rcv_process_new: Discovered new Switch node,
+				GUID 0x2264ffff34e9c8, TID 0x1260
+Feb 14 20:27:55 972970 [FD16F700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 0 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x125f
+Feb 14 20:27:55 972988 [FD16F700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 7 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1268
+Feb 14 20:27:55 972997 [FD16F700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 8 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1269
+Feb 14 20:27:55 973009 [FE972700] 0x04 -> ni_rcv_process_existing: Rediscovered Switch node 0x2264ffff34e9c8 TID 0x1262, discovered 1 times already
+Feb 14 20:27:55 973020 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 9 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x126a
+Feb 14 20:27:55 973029 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 10 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x126b
+Feb 14 20:27:55 973035 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 11 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x126c
+Feb 14 20:27:55 973046 [FC96E700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 5 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1266
+Feb 14 20:27:55 973067 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 6 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1267
+Feb 14 20:27:55 973080 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 12 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x126d
+Feb 14 20:27:55 973087 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 2 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1263
+Feb 14 20:27:55 973095 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 14 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x126f
+Feb 14 20:27:55 973109 [FC96E700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 15 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1270
+Feb 14 20:27:55 973119 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 13 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x126e
+Feb 14 20:27:55 973126 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 3 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1264
+Feb 14 20:27:55 973136 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 16 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1271
+Feb 14 20:27:55 973141 [FF173700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 4 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1265
+Feb 14 20:27:55 973147 [FF173700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 17 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1273
+Feb 14 20:27:55 973155 [FD970700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 1 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1261
+Feb 14 20:27:55 973183 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 18 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1275
+Feb 14 20:27:55 973234 [FC96E700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 19 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1277
+Feb 14 20:27:55 973272 [FE972700] 0x04 -> Received SMP on a 2 hop path: Initial path = 0,1,17, Return path  = 0,22,1
+Feb 14 20:27:55 973279 [FE972700] 0x04 -> ni_rcv_process_new: Discovered new Channel Adapter node,
+				GUID 0x24be05ffff891080, TID 0x1272
+Feb 14 20:27:55 973297 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 20 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1278
+Feb 14 20:27:55 973321 [FC16D700] 0x04 -> Received SMP on a 2 hop path: Initial path = 0,1,18, Return path  = 0,22,1
+Feb 14 20:27:55 973327 [FC16D700] 0x04 -> ni_rcv_process_new: Discovered new Channel Adapter node,
+				GUID 0x24be05ffff891060, TID 0x1274
+Feb 14 20:27:55 973344 [FF173700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 21 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1279
+Feb 14 20:27:55 973359 [FD16F700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 22 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x127a
+Feb 14 20:27:55 973371 [FD970700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 23 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x127b
+Feb 14 20:27:55 973383 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 24 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x127c
+Feb 14 20:27:55 973404 [FC96E700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 25 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x127d
+Feb 14 20:27:55 973416 [FC96E700] 0x04 -> Received SMP on a 2 hop path: Initial path = 0,1,19, Return path  = 0,22,1
+Feb 14 20:27:55 973420 [FC96E700] 0x04 -> ni_rcv_process_new: Discovered new Channel Adapter node,
+				GUID 0x2c9030007213c, TID 0x1276
+Feb 14 20:27:55 973454 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 26 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x127e
+Feb 14 20:27:55 973467 [FF173700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 28 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1280
+Feb 14 20:27:55 973477 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 27 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x127f
+Feb 14 20:27:55 973499 [FD16F700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 29 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1281
+Feb 14 20:27:55 973518 [FD970700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 30 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1282
+Feb 14 20:27:55 973535 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 31 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1283
+Feb 14 20:27:55 973547 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 32 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1284
+Feb 14 20:27:55 973569 [FC96E700] 0x04 -> nd_rcv_process_nd: Node 0x2264ffff34e9c8, Description = Infiniscale-IV Mellanox Technologies
+Feb 14 20:27:55 973640 [FF173700] 0x04 -> nd_rcv_process_nd: Node 0x24be05ffff891080, Description = TD-WSS01
+Feb 14 20:27:55 973744 [FC16D700] 0x04 -> nd_rcv_process_nd: Node 0x24be05ffff891060, Description = TD-WSS02
+Feb 14 20:27:55 973986 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 1 with GUID 0x24be05ffff891081 for parent node GUID 0x24be05ffff891080, TID 0x1288
+Feb 14 20:27:55 973994 [FD16F700] 0x04 -> pi_rcv_process_endport: Setting endport minimal data VLs to:2 defined by port:0x24be05ffff891081
+Feb 14 20:27:55 974227 [FB96C700] 0x04 -> nd_rcv_process_nd: Node 0x2c9030007213c, Description = td-lss02 mlx4_0
+Feb 14 20:27:55 974326 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 0 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x128f
+Feb 14 20:27:55 974361 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 1 with GUID 0x24be05ffff891061 for parent node GUID 0x24be05ffff891060, TID 0x128b
+Feb 14 20:27:55 974383 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 1 with GUID 0x2c9030007213d for parent node GUID 0x2c9030007213c, TID 0x128e
+Feb 14 20:27:55 974388 [FF173700] 0x04 -> pi_rcv_process_endport: Setting endport minimal MTU to:4 defined by port:0x2c9030007213d
+Feb 14 20:27:55 974643 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 1 with GUID 0x24be05ffff891081 for parent node GUID 0x24be05ffff891080, TID 0x1290
+Feb 14 20:27:55 974808 [FD16F700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:1 port_num 1 with GUID 0x24be05ffff891081 for parent node GUID 0x24be05ffff891080, TID 0x1291
+Feb 14 20:27:55 975000 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:2 port_num 1 with GUID 0x24be05ffff891081 for parent node GUID 0x24be05ffff891080, TID 0x1292
+Feb 14 20:27:55 975020 [FD970700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:3 port_num 1 with GUID 0x24be05ffff891081 for parent node GUID 0x24be05ffff891080, TID 0x1293
+Feb 14 20:27:55 975134 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 1 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1294
+Feb 14 20:27:55 975141 [FE972700] 0x04 -> pi_rcv_process_switch_ext_port: Setting switch port minimal data VLs to:5 defined by node:0x2264ffff34e9c8, port:1
+Feb 14 20:27:55 975558 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 2 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1295
+Feb 14 20:27:55 976007 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 3 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1296
+Feb 14 20:27:55 976419 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 4 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1297
+Feb 14 20:27:55 976882 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 5 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1298
+Feb 14 20:27:55 977369 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 6 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1299
+Feb 14 20:27:55 977741 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 7 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x129a
+Feb 14 20:27:55 978308 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 8 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x129b
+Feb 14 20:27:55 978671 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 9 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x129c
+Feb 14 20:27:55 979062 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 10 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x129d
+Feb 14 20:27:55 979522 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 11 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x129e
+Feb 14 20:27:55 979902 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 12 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x129f
+Feb 14 20:27:55 980340 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 13 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12a0
+Feb 14 20:27:55 980733 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 14 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12a1
+Feb 14 20:27:55 981198 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 15 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12a2
+Feb 14 20:27:55 981591 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 16 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12a3
+Feb 14 20:27:55 982113 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 17 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12a4
+Feb 14 20:27:55 982495 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 18 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12a5
+Feb 14 20:27:55 982876 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 19 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12a6
+Feb 14 20:27:55 983343 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 20 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12a7
+Feb 14 20:27:55 983738 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 21 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12a8
+Feb 14 20:27:55 984204 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 22 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12a9
+Feb 14 20:27:55 984581 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 23 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12aa
+Feb 14 20:27:55 985059 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 24 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12ab
+Feb 14 20:27:55 985458 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 25 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12ac
+Feb 14 20:27:55 985906 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 26 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12ad
+Feb 14 20:27:55 986331 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 27 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12ae
+Feb 14 20:27:55 986734 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 28 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12af
+Feb 14 20:27:55 987206 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 29 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12b0
+Feb 14 20:27:55 987668 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 30 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12b1
+Feb 14 20:27:55 988045 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 31 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12b2
+Feb 14 20:27:55 988186 [FD970700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 1 with GUID 0x24be05ffff891061 for parent node GUID 0x24be05ffff891060, TID 0x12b5
+Feb 14 20:27:55 988464 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 32 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12b3
+Feb 14 20:27:55 988471 [FC96E700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 0 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12b4
+Feb 14 20:27:55 988779 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 1 with GUID 0x2c9030007213d for parent node GUID 0x2c9030007213c, TID 0x12b9
+Feb 14 20:27:55 988861 [FF173700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:1 port_num 1 with GUID 0x24be05ffff891061 for parent node GUID 0x24be05ffff891060, TID 0x12b6
+Feb 14 20:27:55 989121 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:1 port_num 1 with GUID 0x2c9030007213d for parent node GUID 0x2c9030007213c, TID 0x12ba
+Feb 14 20:27:55 989157 [FD16F700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:2 port_num 1 with GUID 0x24be05ffff891061 for parent node GUID 0x24be05ffff891060, TID 0x12b7
+Feb 14 20:27:55 989181 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:3 port_num 1 with GUID 0x24be05ffff891061 for parent node GUID 0x24be05ffff891060, TID 0x12b8
+Feb 14 20:27:55 989234 [FD970700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:2 port_num 1 with GUID 0x2c9030007213d for parent node GUID 0x2c9030007213c, TID 0x12bb
+Feb 14 20:27:55 989259 [FD970700] 0x04 -> ni_rcv_process_existing: Rediscovered Switch node 0x2264ffff34e9b8 TID 0x12be, discovered 1 times already
+Feb 14 20:27:55 989293 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 2 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12bf
+Feb 14 20:27:55 989308 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 3 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12c0
+Feb 14 20:27:55 989318 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 4 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12c1
+Feb 14 20:27:55 989332 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:3 port_num 1 with GUID 0x2c9030007213d for parent node GUID 0x2c9030007213c, TID 0x12bc
+Feb 14 20:27:55 989340 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 5 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12c2
+Feb 14 20:27:55 989359 [FC96E700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 1 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12bd
+Feb 14 20:27:55 989389 [FD970700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 6 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12c3
+Feb 14 20:27:55 989400 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 7 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12c4
+Feb 14 20:27:55 989439 [FF173700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 8 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12c5
+Feb 14 20:27:55 989453 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 9 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12c6
+Feb 14 20:27:55 989462 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 10 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12c7
+Feb 14 20:27:55 989496 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 11 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12c8
+Feb 14 20:27:55 989506 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 12 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12c9
+Feb 14 20:27:55 989514 [FC96E700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 13 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12ca
+Feb 14 20:27:55 989525 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 14 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12cb
+Feb 14 20:27:55 989558 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 15 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12cc
+Feb 14 20:27:55 989566 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 16 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12cd
+Feb 14 20:27:55 989580 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 17 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12cf
+Feb 14 20:27:55 989660 [FD16F700] 0x04 -> ni_rcv_process_existing: Rediscovered Channel Adapter node 0x24be05ffff891080 TID 0x12ce, discovered 1 times already
+Feb 14 20:27:55 989665 [FD16F700] 0x04 -> ni_rcv_process_existing_ca_or_router: Creating new port object with GUID 0x24be05ffff891082
+Feb 14 20:27:55 989679 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 18 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12d1
+Feb 14 20:27:55 989747 [FC96E700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 19 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12d3
+Feb 14 20:27:55 989778 [FD970700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 20 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12d4
+Feb 14 20:27:55 989794 [FB96C700] 0x04 -> ni_rcv_process_existing: Rediscovered Channel Adapter node 0x24be05ffff891060 TID 0x12d0, discovered 1 times already
+Feb 14 20:27:55 989799 [FB96C700] 0x04 -> ni_rcv_process_existing_ca_or_router: Creating new port object with GUID 0x24be05ffff891062
+Feb 14 20:27:55 989814 [FF173700] 0x04 -> ni_rcv_process_existing: Rediscovered Channel Adapter node 0x2c9030007213c TID 0x12d2, discovered 1 times already
+Feb 14 20:27:55 989821 [FF173700] 0x04 -> ni_rcv_process_existing_ca_or_router: Creating new port object with GUID 0x2c9030007213e
+Feb 14 20:27:55 989839 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 21 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12d5
+Feb 14 20:27:55 989878 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 22 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12d7
+Feb 14 20:27:55 989886 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 23 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12d8
+Feb 14 20:27:55 989911 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 24 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12d9
+Feb 14 20:27:55 989922 [FE171700] 0x04 -> ni_rcv_process_existing: Rediscovered Channel Adapter node 0x2c90300071da8 TID 0x12d6, discovered 1 times already
+Feb 14 20:27:55 989926 [FE171700] 0x04 -> ni_rcv_process_existing_ca_or_router: Creating new port object with GUID 0x2c90300071daa
+Feb 14 20:27:55 989938 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 25 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12da
+Feb 14 20:27:55 989956 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 26 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12db
+Feb 14 20:27:55 989963 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 27 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12dc
+Feb 14 20:27:55 989985 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 28 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12dd
+Feb 14 20:27:55 990005 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 29 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12de
+Feb 14 20:27:55 990023 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 30 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12df
+Feb 14 20:27:55 990030 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 31 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12e0
+Feb 14 20:27:55 990054 [FD970700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 32 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x12e1
+Feb 14 20:27:55 990313 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 2 with GUID 0x24be05ffff891082 for parent node GUID 0x24be05ffff891080, TID 0x12e2
+Feb 14 20:27:55 990438 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 2 with GUID 0x2c90300071daa for parent node GUID 0x2c90300071da8, TID 0x12e7
+Feb 14 20:27:55 990508 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 2 with GUID 0x2c9030007213e for parent node GUID 0x2c9030007213c, TID 0x12e6
+Feb 14 20:27:55 990767 [FD16F700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 2 with GUID 0x24be05ffff891082 for parent node GUID 0x24be05ffff891080, TID 0x12e8
+Feb 14 20:27:55 990794 [FC96E700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:1 port_num 2 with GUID 0x24be05ffff891082 for parent node GUID 0x24be05ffff891080, TID 0x12e9
+Feb 14 20:27:55 990807 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 2 with GUID 0x24be05ffff891062 for parent node GUID 0x24be05ffff891060, TID 0x12e4
+Feb 14 20:27:55 990968 [FF173700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 2 with GUID 0x2c90300071daa for parent node GUID 0x2c90300071da8, TID 0x12ec
+Feb 14 20:27:55 991007 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:1 port_num 2 with GUID 0x2c90300071daa for parent node GUID 0x2c90300071da8, TID 0x12ed
+Feb 14 20:27:55 991131 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:2 port_num 2 with GUID 0x24be05ffff891082 for parent node GUID 0x24be05ffff891080, TID 0x12ea
+Feb 14 20:27:55 991139 [FC16D700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:3 port_num 2 with GUID 0x24be05ffff891082 for parent node GUID 0x24be05ffff891080, TID 0x12eb
+Feb 14 20:27:55 991180 [FD16F700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:2 port_num 2 with GUID 0x2c90300071daa for parent node GUID 0x2c90300071da8, TID 0x12ee
+Feb 14 20:27:55 991190 [FD16F700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:3 port_num 2 with GUID 0x2c90300071daa for parent node GUID 0x2c90300071da8, TID 0x12ef
+Feb 14 20:27:55 991409 [FD970700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 2 with GUID 0x2c9030007213e for parent node GUID 0x2c9030007213c, TID 0x12f0
+Feb 14 20:27:55 991503 [FE972700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:1 port_num 2 with GUID 0x2c9030007213e for parent node GUID 0x2c9030007213c, TID 0x12f1
+Feb 14 20:27:55 991594 [FF173700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:2 port_num 2 with GUID 0x2c9030007213e for parent node GUID 0x2c9030007213c, TID 0x12f2
+Feb 14 20:27:55 991669 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:3 port_num 2 with GUID 0x2c9030007213e for parent node GUID 0x2c9030007213c, TID 0x12f3
+Feb 14 20:27:55 992465 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 2 with GUID 0x24be05ffff891062 for parent node GUID 0x24be05ffff891060, TID 0x12f4
+Feb 14 20:27:55 992474 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:1 port_num 2 with GUID 0x24be05ffff891062 for parent node GUID 0x24be05ffff891060, TID 0x12f5
+Feb 14 20:27:55 992480 [FB96C700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:2 port_num 2 with GUID 0x24be05ffff891062 for parent node GUID 0x24be05ffff891060, TID 0x12f6
+Feb 14 20:27:55 992498 [FC96E700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:3 port_num 2 with GUID 0x24be05ffff891062 for parent node GUID 0x24be05ffff891060, TID 0x12f7
+Feb 14 20:27:55 992514 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********************** HEAVY SWEEP COMPLETE **********************
+******************************************************************
+
+
+Feb 14 20:27:55 992552 [FA96A700] 0x80 -> Entering MASTER state
+Feb 14 20:27:55 992558 [FA96A700] 0x04 -> osm_report_sm_state:
+
+
+******************************************************************
+******************** ENTERING SM MASTER STATE ********************
+******************************************************************
+
+
+Feb 14 20:27:55 992571 [FA96A700] 0x04 -> osm_prtn_make_partitions: Partition configuration /etc/rdma/partitions.conf is not accessible (No such file or directory)
+Feb 14 20:27:55 992581 [FA96A700] 0x04 -> osm_prtn_add_port: port 0x2c90300071da9 already in partition 'Default' (0x7fff). Will overwrite
+Feb 14 20:27:55 992600 [FA96A700] 0x04 -> osm_sa_db_file_load: sa db file name is not specifed. Skip restore
+Feb 14 20:27:55 992604 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********* PKEY setup completed - STARTING SM LID CONFIG **********
+******************************************************************
+
+
+Feb 14 20:27:55 992695 [FA96A700] 0x04 -> lid_mgr_process_our_sm_node: Assigning SM's port 0x0002c90300071da9
+				to LID range [1,1]
+Feb 14 20:27:55 993051 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+**** SM LID ASSIGNMENT COMPLETE - STARTING SUBNET LID CONFIG *****
+******************************************************************
+
+
+Feb 14 20:27:55 993059 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x0002c9030007213d,  LID [2,2]
+Feb 14 20:27:55 993068 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x0002c9030007213e,  LID [3,3]
+Feb 14 20:27:55 993073 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x24be05ffff891061,  LID [4,4]
+Feb 14 20:27:55 993078 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x24be05ffff891062,  LID [5,5]
+Feb 14 20:27:55 993083 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x24be05ffff891081,  LID [6,6]
+Feb 14 20:27:55 993100 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x24be05ffff891082,  LID [7,7]
+Feb 14 20:27:55 993106 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x0002c90300071daa,  LID [8,8]
+Feb 14 20:27:55 993110 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x002264ffff34e9b8,  LID [9,9]
+Feb 14 20:27:55 993115 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x002264ffff34e9c8,  LID [10,10]
+Feb 14 20:27:55 994004 [F9968700] 0x04 -> sa_mad_ctrl_rcv_callback: Received SA MAD while SM in first sweep. MAD ignored
+Feb 14 20:27:55 995652 [F9968700] 0x04 -> sa_mad_ctrl_rcv_callback: Received SA MAD while SM in first sweep. MAD ignored
+Feb 14 20:27:55 995680 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+***** LID ASSIGNMENT COMPLETE - STARTING SWITCH TABLE CONFIG *****
+******************************************************************
+
+
+Feb 14 20:27:55 995691 [FA96A700] 0x04 -> ucast_mgr_route: building routing with 'minhop' routing algorithm...
+Feb 14 20:27:55 995697 [FA96A700] 0x04 -> osm_ucast_mgr_build_lid_matrices: Starting switches' Min Hop Table Assignment
+Feb 14 20:27:55 995717 [FA96A700] 0x02 -> osm_ucast_mgr_process: minhop tables configured on all switches
+Feb 14 20:27:55 995996 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+**************** SWITCHES CONFIGURED FOR UNICAST *****************
+******************************************************************
+
+
+Feb 14 20:27:55 996016 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: MLID 0xC000 has 0 members - nothing to do
+Feb 14 20:27:55 996028 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+*************** SWITCHES CONFIGURED FOR MULTICAST ****************
+******************************************************************
+
+
+Feb 14 20:27:55 996032 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********************* ALIAS GUIDS CONFIGURED *********************
+******************************************************************
+
+
+Feb 14 20:27:56 005533 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+******* LINKS PORTS CONFIGURED - SET LINKS TO ARMED STATE ********
+******************************************************************
+
+
+Feb 14 20:27:56 005542 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+************ LINKS ARMED - SET LINKS TO ACTIVE STATE *************
+******************************************************************
+
+
+{ CA Ports:02 SystemGUID:0002c9030007213f NodeGUID:0002c9030007213c PortGUID:0002c9030007213d VenID:0002C9 DevID:673C Rev:000000B0 {td-lss02 mlx4_0} LID:0002 PN:01 } { SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:13 } PHY=4x LOG=ACT SPD=10
+{ CA Ports:02 SystemGUID:0002c9030007213f NodeGUID:0002c9030007213c PortGUID:0002c9030007213e VenID:0002C9 DevID:673C Rev:000000B0 {td-lss02 mlx4_0} LID:0003 PN:02 } { SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:13 } PHY=4x LOG=ACT SPD=10
+{ CA Ports:02 SystemGUID:24be05ffff891063 NodeGUID:24be05ffff891060 PortGUID:24be05ffff891061 VenID:0002C9 DevID:1003 Rev:00000000 {TD-WSS02} LID:0004 PN:01 } { SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:12 } PHY=4x LOG=ACT SPD=10
+{ CA Ports:02 SystemGUID:24be05ffff891063 NodeGUID:24be05ffff891060 PortGUID:24be05ffff891062 VenID:0002C9 DevID:1003 Rev:00000000 {TD-WSS02} LID:0005 PN:02 } { SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:12 } PHY=4x LOG=ACT SPD=10
+{ CA Ports:02 SystemGUID:24be05ffff891083 NodeGUID:24be05ffff891080 PortGUID:24be05ffff891081 VenID:0002C9 DevID:1003 Rev:00000000 {TD-WSS01} LID:0006 PN:01 } { SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:11 } PHY=4x LOG=ACT SPD=10
+{ CA Ports:02 SystemGUID:24be05ffff891083 NodeGUID:24be05ffff891080 PortGUID:24be05ffff891082 VenID:0002C9 DevID:1003 Rev:00000000 {TD-WSS01} LID:0007 PN:02 } { SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:11 } PHY=4x LOG=ACT SPD=10
+{ CA-SM Ports:02 SystemGUID:0002c90300071dab NodeGUID:0002c90300071da8 PortGUID:0002c90300071da9 VenID:0002C9 DevID:673C Rev:000000B0 {MT25408 ConnectX Mellanox Technologies} LID:0001 PN:01 } { SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:16 } PHY=4x LOG=ACT SPD=10
+{ CA Ports:02 SystemGUID:0002c90300071dab NodeGUID:0002c90300071da8 PortGUID:0002c90300071daa VenID:0002C9 DevID:673C Rev:000000B0 {MT25408 ConnectX Mellanox Technologies} LID:0008 PN:02 } { SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:16 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:01 } { SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:01 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:02 } { SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:02 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:11 } { CA Ports:02 SystemGUID:24be05ffff891083 NodeGUID:24be05ffff891080 PortGUID:24be05ffff891081 VenID:000002C9 DevID:10030000 Rev:00000000 {TD-WSS01} LID:0006 PN:01 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:12 } { CA Ports:02 SystemGUID:24be05ffff891063 NodeGUID:24be05ffff891060 PortGUID:24be05ffff891061 VenID:000002C9 DevID:10030000 Rev:00000000 {TD-WSS02} LID:0004 PN:01 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:13 } { CA Ports:02 SystemGUID:0002c9030007213f NodeGUID:0002c9030007213c PortGUID:0002c9030007213d VenID:000002C9 DevID:673C0000 Rev:000000B0 {td-lss02 mlx4_0} LID:0002 PN:01 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:16 } { CA-SM Ports:02 SystemGUID:0002c90300071dab NodeGUID:0002c90300071da8 PortGUID:0002c90300071da9 VenID:000002C9 DevID:673C0000 Rev:000000B0 {MT25408 ConnectX Mellanox Technologies} LID:0001 PN:01 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:01 } { SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:01 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:02 } { SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:02 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:11 } { CA Ports:02 SystemGUID:24be05ffff891083 NodeGUID:24be05ffff891080 PortGUID:24be05ffff891082 VenID:000002C9 DevID:10030000 Rev:00000000 {TD-WSS01} LID:0007 PN:02 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:12 } { CA Ports:02 SystemGUID:24be05ffff891063 NodeGUID:24be05ffff891060 PortGUID:24be05ffff891062 VenID:000002C9 DevID:10030000 Rev:00000000 {TD-WSS02} LID:0005 PN:02 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:13 } { CA Ports:02 SystemGUID:0002c9030007213f NodeGUID:0002c9030007213c PortGUID:0002c9030007213e VenID:000002C9 DevID:673C0000 Rev:000000B0 {td-lss02 mlx4_0} LID:0003 PN:02 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:16 } { CA Ports:02 SystemGUID:0002c90300071dab NodeGUID:0002c90300071da8 PortGUID:0002c90300071daa VenID:000002C9 DevID:673C0000 Rev:000000B0 {MT25408 ConnectX Mellanox Technologies} LID:0008 PN:02 } PHY=4x LOG=ACT SPD=10
+
+=======================================================================================================
+Vendor      : Ty : #  : Sta : LID  : LMC : MTU  : LWA : LSA  : Port GUID        : Neighbor Port (Port #)
+Mellanox    : CA : 01 : ACT : 0002 :  0  : 2048 : 4x  : 10   : 0002c9030007213d : 002264ffff34e9b8 (13)
+Mellanox    : CA : 02 : ACT : 0003 :  0  : 2048 : 4x  : 10   : 0002c9030007213e : 002264ffff34e9c8 (13)
+------------------------------------------------------------------------------------------------------
+Unknown     : CA : 01 : ACT : 0004 :  0  : 4096 : 4x  : 10   : 24be05ffff891061 : 002264ffff34e9b8 (12)
+Unknown     : CA : 02 : ACT : 0005 :  0  : 4096 : 4x  : 10   : 24be05ffff891062 : 002264ffff34e9c8 (12)
+------------------------------------------------------------------------------------------------------
+Unknown     : CA : 01 : ACT : 0006 :  0  : 4096 : 4x  : 10   : 24be05ffff891081 : 002264ffff34e9b8 (11)
+Unknown     : CA : 02 : ACT : 0007 :  0  : 4096 : 4x  : 10   : 24be05ffff891082 : 002264ffff34e9c8 (11)
+------------------------------------------------------------------------------------------------------
+Mellanox    : CA : 01 : ACT : 0001 :  0  : 4096 : 4x  : 10   * 0002c90300071da9 * 002264ffff34e9b8 (16)
+Mellanox    : CA : 02 : ACT : 0008 :  0  : 4096 : 4x  : 10   : 0002c90300071daa : 002264ffff34e9c8 (16)
+------------------------------------------------------------------------------------------------------
+Unknown     : SW : 00 :     : 0009 :  0  :      :     :      : 002264ffff34e9b8 :
+Unknown     : SW : 01 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9b8 : 002264ffff34e9c8 (01)
+Unknown     : SW : 02 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9b8 : 002264ffff34e9c8 (02)
+Unknown     : SW : 03 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 04 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 05 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 06 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 07 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 08 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 09 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 0A : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 0B : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 0C : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 0D : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 0E : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 0F : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 10 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 11 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9b8 : 24be05ffff891081 (01)
+Unknown     : SW : 12 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9b8 : 24be05ffff891061 (01)
+Unknown     : SW : 13 : ACT :      :     : 2048 : 4x  : 10   : 002264ffff34e9b8 : 0002c9030007213d (01)
+Unknown     : SW : 14 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 15 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 16 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9b8 : 0002c90300071da9 (01)
+Unknown     : SW : 17 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 18 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 19 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 1A : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 1B : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 1C : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 1D : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 1E : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 1F : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 20 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+------------------------------------------------------------------------------------------------------
+Unknown     : SW : 00 :     : 000A :  0  :      :     :      : 002264ffff34e9c8 :
+Unknown     : SW : 01 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9c8 : 002264ffff34e9b8 (01)
+Unknown     : SW : 02 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9c8 : 002264ffff34e9b8 (02)
+Unknown     : SW : 03 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 04 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 05 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 06 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 07 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 08 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 09 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 0A : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 0B : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 0C : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 0D : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 0E : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 0F : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 10 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 11 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9c8 : 24be05ffff891082 (02)
+Unknown     : SW : 12 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9c8 : 24be05ffff891062 (02)
+Unknown     : SW : 13 : ACT :      :     : 2048 : 4x  : 10   : 002264ffff34e9c8 : 0002c9030007213e (02)
+Unknown     : SW : 14 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 15 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 16 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9c8 : 0002c90300071daa (02)
+Unknown     : SW : 17 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 18 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 19 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 1A : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 1B : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 1C : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 1D : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 1E : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 1F : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 20 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+------------------------------------------------------------------------------------------------------
+Feb 14 20:27:56 005864 [FA96A700] 0x02 -> SUBNET UP
+Feb 14 20:27:56 005869 [FA96A700] 0x04 -> state_mgr_up_msg:
+
+
+******************************************************************
+*************************** SUBNET UP ****************************
+******************************************************************
+
+
+Feb 14 20:27:56 830060 [FD970700] 0x01 -> log_trap_info: Received Generic Notice type:4 num:144 (CapabilityMask, NodeDescription, Link [Width|Speed] Enabled, SM priority changed) Producer:1 (Channel Adapter) from LID:1 TID:0x0000000000000008
+Feb 14 20:27:56 830085 [FD970700] 0x04 -> Generic Notice dump:
+				type.....................4
+				prod_type................1 (Channel Adapter)
+				trap_num.................144
+				lid......................1
+				local_changes............0
+				new_cap_mask.............0x0251086a
+				change_flags.............0x0
+				cap_mask2................0x0
+Feb 14 20:27:56 830129 [FD970700] 0x04 -> trap_rcv_process_request: Forcing heavy sweep. Received trap:144
+Feb 14 20:27:56 830458 [FA96A700] 0x04 -> state_mgr_sweep_hop_0:
+
+
+******************************************************************
+********************* INITIATING HEAVY SWEEP *********************
+******************************************************************
+
+
+Feb 14 20:27:56 830478 [FD970700] 0x02 -> log_notice: Reporting Informational Notice "CapabilityMask, NodeDescription, Link [Width|Speed] Enabled, SM priority changed" from LID 1, GUID 0x0002c90300071da9, new CapabilityMask 0x0251086a
+Feb 14 20:27:56 830841 [FE972700] 0x04 -> ni_rcv_process_existing: Rediscovered Channel Adapter node 0x2c90300071da8 TID 0x1310, discovered 0 times already
+Feb 14 20:27:56 831091 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 1 with GUID 0x2c90300071da9 for parent node GUID 0x2c90300071da8, TID 0x1311
+Feb 14 20:27:56 831102 [FF173700] 0x04 -> pi_rcv_process_endport: Setting endport minimal rate to:7 defined by port:0x2c90300071da9
+Feb 14 20:27:56 831104 [FF173700] 0x04 -> pi_rcv_process_endport: Setting endport minimal data VLs to:4 defined by port:0x2c90300071da9
+Feb 14 20:27:56 831256 [FE171700] 0x04 -> ni_rcv_process_existing: Rediscovered Switch node 0x2264ffff34e9b8 TID 0x1312, discovered 0 times already
+Feb 14 20:27:56 831490 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 0 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1314
+Feb 14 20:27:56 832035 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 1 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1315
+Feb 14 20:27:56 832047 [FB96C700] 0x04 -> pi_rcv_process_switch_ext_port: Setting switch port minimal data VLs to:5 defined by node:0x2264ffff34e9b8, port:1
+Feb 14 20:27:56 832484 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 2 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1316
+Feb 14 20:27:56 832910 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 3 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1317
+Feb 14 20:27:56 833331 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 4 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1318
+Feb 14 20:27:56 833765 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 5 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1319
+Feb 14 20:27:56 834276 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 6 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x131a
+Feb 14 20:27:56 834651 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 7 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x131b
+Feb 14 20:27:56 835080 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 8 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x131c
+Feb 14 20:27:56 835559 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 9 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x131d
+Feb 14 20:27:56 835887 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 10 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x131e
+Feb 14 20:27:56 836423 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 11 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x131f
+Feb 14 20:27:56 836870 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 12 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1320
+Feb 14 20:27:56 837303 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 13 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1321
+Feb 14 20:27:56 837716 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 14 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1322
+Feb 14 20:27:56 838142 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 15 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1323
+Feb 14 20:27:56 838525 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 16 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1324
+Feb 14 20:27:56 838962 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 17 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1325
+Feb 14 20:27:56 839389 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 18 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1326
+Feb 14 20:27:56 839771 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 19 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1327
+Feb 14 20:27:56 840219 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 20 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1328
+Feb 14 20:27:56 840682 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 21 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1329
+Feb 14 20:27:56 841094 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 22 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x132a
+Feb 14 20:27:56 841573 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 23 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x132b
+Feb 14 20:27:56 841976 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 24 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x132c
+Feb 14 20:27:56 842417 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 25 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x132d
+Feb 14 20:27:56 842755 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 26 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x132e
+Feb 14 20:27:56 843294 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 27 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x132f
+Feb 14 20:27:56 843632 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 28 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1330
+Feb 14 20:27:56 844071 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 29 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1331
+Feb 14 20:27:56 844521 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 30 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1332
+Feb 14 20:27:56 844918 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 31 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1333
+Feb 14 20:27:56 845391 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 32 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1334
+Feb 14 20:27:56 845427 [FC96E700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 0 with GUID 0x2264ffff34e9b8 for parent node GUID 0x2264ffff34e9b8, TID 0x1335
+Feb 14 20:27:56 845441 [FD970700] 0x04 -> ni_rcv_process_existing: Rediscovered Switch node 0x2264ffff34e9c8 TID 0x1336, discovered 0 times already
+Feb 14 20:27:56 845461 [FB96C700] 0x04 -> ni_rcv_process_existing: Rediscovered Switch node 0x2264ffff34e9c8 TID 0x1337, discovered 1 times already
+Feb 14 20:27:56 845538 [FF173700] 0x04 -> ni_rcv_process_existing: Rediscovered Channel Adapter node 0x24be05ffff891080 TID 0x1338, discovered 0 times already
+Feb 14 20:27:56 845588 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 0 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x133c
+Feb 14 20:27:56 845625 [FD16F700] 0x04 -> ni_rcv_process_existing: Rediscovered Channel Adapter node 0x24be05ffff891060 TID 0x1339, discovered 0 times already
+Feb 14 20:27:56 845653 [FC16D700] 0x04 -> ni_rcv_process_existing: Rediscovered Channel Adapter node 0x2c9030007213c TID 0x133a, discovered 0 times already
+Feb 14 20:27:56 845992 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 1 with GUID 0x24be05ffff891081 for parent node GUID 0x24be05ffff891080, TID 0x133d
+Feb 14 20:27:56 846000 [FC96E700] 0x04 -> pi_rcv_process_endport: Setting endport minimal data VLs to:2 defined by port:0x24be05ffff891081
+Feb 14 20:27:56 846073 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 1 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x133f
+Feb 14 20:27:56 846505 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 2 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1340
+Feb 14 20:27:56 846930 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 3 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1341
+Feb 14 20:27:56 847360 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 4 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1342
+Feb 14 20:27:56 847879 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 5 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1343
+Feb 14 20:27:56 848241 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 6 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1344
+Feb 14 20:27:56 848667 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 7 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1345
+Feb 14 20:27:56 849227 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 8 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1346
+Feb 14 20:27:56 849554 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 9 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1347
+Feb 14 20:27:56 849965 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 10 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1348
+Feb 14 20:27:56 850444 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 11 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1349
+Feb 14 20:27:56 850857 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 12 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x134a
+Feb 14 20:27:56 851341 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 13 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x134b
+Feb 14 20:27:56 851737 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 14 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x134c
+Feb 14 20:27:56 852192 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 15 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x134d
+Feb 14 20:27:56 852585 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 16 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x134e
+Feb 14 20:27:56 852976 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 17 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x134f
+Feb 14 20:27:56 853405 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 18 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1350
+Feb 14 20:27:56 853847 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 19 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1351
+Feb 14 20:27:56 854356 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 20 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1352
+Feb 14 20:27:56 854758 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 21 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1353
+Feb 14 20:27:56 855171 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 22 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1354
+Feb 14 20:27:56 855609 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 23 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1355
+Feb 14 20:27:56 856064 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 24 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1356
+Feb 14 20:27:56 856541 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 25 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1357
+Feb 14 20:27:56 856887 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 26 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1358
+Feb 14 20:27:56 857359 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 27 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x1359
+Feb 14 20:27:56 857694 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 28 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x135a
+Feb 14 20:27:56 858117 [FD16F700] 0x04 -> osm_pi_rcv_process: Discovered port num 29 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x135b
+Feb 14 20:27:56 858552 [FC16D700] 0x04 -> osm_pi_rcv_process: Discovered port num 30 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x135c
+Feb 14 20:27:56 858972 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 31 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x135d
+Feb 14 20:27:56 858983 [FC96E700] 0x04 -> osm_pi_rcv_process: Discovered port num 1 with GUID 0x24be05ffff891061 for parent node GUID 0x24be05ffff891060, TID 0x1360
+Feb 14 20:27:56 859281 [FB96C700] 0x04 -> osm_pi_rcv_process: Discovered port num 1 with GUID 0x2c9030007213d for parent node GUID 0x2c9030007213c, TID 0x1362
+Feb 14 20:27:56 859287 [FB96C700] 0x04 -> pi_rcv_process_endport: Setting endport minimal MTU to:4 defined by port:0x2c9030007213d
+Feb 14 20:27:56 859401 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 32 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x135e
+Feb 14 20:27:56 859409 [FE171700] 0x04 -> osm_pkey_rcv_process: Got GetResp(PKey) block:0 port_num 0 with GUID 0x2264ffff34e9c8 for parent node GUID 0x2264ffff34e9c8, TID 0x135f
+Feb 14 20:27:56 859415 [FE171700] 0x04 -> ni_rcv_process_existing: Rediscovered Switch node 0x2264ffff34e9b8 TID 0x1363, discovered 1 times already
+Feb 14 20:27:56 859514 [FD970700] 0x04 -> ni_rcv_process_existing: Rediscovered Channel Adapter node 0x24be05ffff891080 TID 0x1364, discovered 1 times already
+Feb 14 20:27:56 859530 [FD970700] 0x04 -> ni_rcv_process_existing: Rediscovered Channel Adapter node 0x2c90300071da8 TID 0x1367, discovered 1 times already
+Feb 14 20:27:56 859580 [FC96E700] 0x04 -> ni_rcv_process_existing: Rediscovered Channel Adapter node 0x24be05ffff891060 TID 0x1365, discovered 1 times already
+Feb 14 20:27:56 859631 [FB96C700] 0x04 -> ni_rcv_process_existing: Rediscovered Channel Adapter node 0x2c9030007213c TID 0x1366, discovered 1 times already
+Feb 14 20:27:56 859727 [FE171700] 0x04 -> osm_pi_rcv_process: Discovered port num 2 with GUID 0x2c90300071daa for parent node GUID 0x2c90300071da8, TID 0x136a
+Feb 14 20:27:56 859904 [FF173700] 0x04 -> osm_pi_rcv_process: Discovered port num 2 with GUID 0x24be05ffff891082 for parent node GUID 0x24be05ffff891080, TID 0x1368
+Feb 14 20:27:56 860159 [FE972700] 0x04 -> osm_pi_rcv_process: Discovered port num 2 with GUID 0x2c9030007213e for parent node GUID 0x2c9030007213c, TID 0x136d
+Feb 14 20:27:56 860297 [FD970700] 0x04 -> osm_pi_rcv_process: Discovered port num 2 with GUID 0x24be05ffff891062 for parent node GUID 0x24be05ffff891060, TID 0x136b
+Feb 14 20:27:56 860319 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********************** HEAVY SWEEP COMPLETE **********************
+******************************************************************
+
+
+Feb 14 20:27:56 860332 [FA96A700] 0x04 -> osm_prtn_make_partitions: Partition configuration /etc/rdma/partitions.conf is not accessible (No such file or directory)
+Feb 14 20:27:56 860346 [FA96A700] 0x04 -> osm_prtn_make_new: Duplicated partition definition: 'Default' (0x7fff) prev name 'Default'.  Will use it
+Feb 14 20:27:56 860355 [FA96A700] 0x04 -> osm_prtn_add_port: port 0x2c90300071da9 already in partition 'Default' (0x7fff). Will overwrite
+Feb 14 20:27:56 860365 [FA96A700] 0x04 -> osm_sa_db_file_load: Not first sweep - skip SA DB restore
+Feb 14 20:27:56 860369 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********* PKEY setup completed - STARTING SM LID CONFIG **********
+******************************************************************
+
+
+Feb 14 20:27:56 860456 [FA96A700] 0x04 -> lid_mgr_process_our_sm_node: Assigning SM's port 0x0002c90300071da9
+				to LID range [1,1]
+Feb 14 20:27:56 860460 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+**** SM LID ASSIGNMENT COMPLETE - STARTING SUBNET LID CONFIG *****
+******************************************************************
+
+
+Feb 14 20:27:56 860464 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x0002c9030007213d,  LID [2,2]
+Feb 14 20:27:56 860468 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x0002c9030007213e,  LID [3,3]
+Feb 14 20:27:56 860473 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x24be05ffff891061,  LID [4,4]
+Feb 14 20:27:56 860477 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x24be05ffff891062,  LID [5,5]
+Feb 14 20:27:56 860481 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x24be05ffff891081,  LID [6,6]
+Feb 14 20:27:56 860485 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x24be05ffff891082,  LID [7,7]
+Feb 14 20:27:56 860489 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x0002c90300071daa,  LID [8,8]
+Feb 14 20:27:56 860493 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x002264ffff34e9b8,  LID [9,9]
+Feb 14 20:27:56 860497 [FA96A700] 0x04 -> osm_lid_mgr_process_subnet: Assigned port 0x002264ffff34e9c8,  LID [10,10]
+Feb 14 20:27:56 860501 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+***** LID ASSIGNMENT COMPLETE - STARTING SWITCH TABLE CONFIG *****
+******************************************************************
+
+
+Feb 14 20:27:56 860505 [FA96A700] 0x04 -> ucast_mgr_route: building routing with 'minhop' routing algorithm...
+Feb 14 20:27:56 860509 [FA96A700] 0x04 -> osm_ucast_mgr_build_lid_matrices: Starting switches' Min Hop Table Assignment
+Feb 14 20:27:56 860517 [FA96A700] 0x02 -> osm_ucast_mgr_process: minhop tables configured on all switches
+Feb 14 20:27:56 860520 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+**************** SWITCHES CONFIGURED FOR UNICAST *****************
+******************************************************************
+
+
+Feb 14 20:27:56 860529 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: MLID 0xC000 has 0 members - nothing to do
+Feb 14 20:27:56 860541 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+*************** SWITCHES CONFIGURED FOR MULTICAST ****************
+******************************************************************
+
+
+Feb 14 20:27:56 860545 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********************* ALIAS GUIDS CONFIGURED *********************
+******************************************************************
+
+
+Feb 14 20:27:56 860551 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+******* LINKS PORTS CONFIGURED - SET LINKS TO ARMED STATE ********
+******************************************************************
+
+
+Feb 14 20:27:56 860555 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+************ LINKS ARMED - SET LINKS TO ACTIVE STATE *************
+******************************************************************
+
+
+{ CA Ports:02 SystemGUID:0002c9030007213f NodeGUID:0002c9030007213c PortGUID:0002c9030007213d VenID:0002C9 DevID:673C Rev:000000B0 {td-lss02 mlx4_0} LID:0002 PN:01 } { SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:13 } PHY=4x LOG=ACT SPD=10
+{ CA Ports:02 SystemGUID:0002c9030007213f NodeGUID:0002c9030007213c PortGUID:0002c9030007213e VenID:0002C9 DevID:673C Rev:000000B0 {td-lss02 mlx4_0} LID:0003 PN:02 } { SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:13 } PHY=4x LOG=ACT SPD=10
+{ CA Ports:02 SystemGUID:24be05ffff891063 NodeGUID:24be05ffff891060 PortGUID:24be05ffff891061 VenID:0002C9 DevID:1003 Rev:00000000 {TD-WSS02} LID:0004 PN:01 } { SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:12 } PHY=4x LOG=ACT SPD=10
+{ CA Ports:02 SystemGUID:24be05ffff891063 NodeGUID:24be05ffff891060 PortGUID:24be05ffff891062 VenID:0002C9 DevID:1003 Rev:00000000 {TD-WSS02} LID:0005 PN:02 } { SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:12 } PHY=4x LOG=ACT SPD=10
+{ CA Ports:02 SystemGUID:24be05ffff891083 NodeGUID:24be05ffff891080 PortGUID:24be05ffff891081 VenID:0002C9 DevID:1003 Rev:00000000 {TD-WSS01} LID:0006 PN:01 } { SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:11 } PHY=4x LOG=ACT SPD=10
+{ CA Ports:02 SystemGUID:24be05ffff891083 NodeGUID:24be05ffff891080 PortGUID:24be05ffff891082 VenID:0002C9 DevID:1003 Rev:00000000 {TD-WSS01} LID:0007 PN:02 } { SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:11 } PHY=4x LOG=ACT SPD=10
+{ CA-SM Ports:02 SystemGUID:0002c90300071dab NodeGUID:0002c90300071da8 PortGUID:0002c90300071da9 VenID:0002C9 DevID:673C Rev:000000B0 {MT25408 ConnectX Mellanox Technologies} LID:0001 PN:01 } { SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:16 } PHY=4x LOG=ACT SPD=10
+{ CA Ports:02 SystemGUID:0002c90300071dab NodeGUID:0002c90300071da8 PortGUID:0002c90300071daa VenID:0002C9 DevID:673C Rev:000000B0 {MT25408 ConnectX Mellanox Technologies} LID:0008 PN:02 } { SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:16 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:01 } { SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:01 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:02 } { SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:02 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:11 } { CA Ports:02 SystemGUID:24be05ffff891083 NodeGUID:24be05ffff891080 PortGUID:24be05ffff891081 VenID:000002C9 DevID:10030000 Rev:00000000 {TD-WSS01} LID:0006 PN:01 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:12 } { CA Ports:02 SystemGUID:24be05ffff891063 NodeGUID:24be05ffff891060 PortGUID:24be05ffff891061 VenID:000002C9 DevID:10030000 Rev:00000000 {TD-WSS02} LID:0004 PN:01 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:13 } { CA Ports:02 SystemGUID:0002c9030007213f NodeGUID:0002c9030007213c PortGUID:0002c9030007213d VenID:000002C9 DevID:673C0000 Rev:000000B0 {td-lss02 mlx4_0} LID:0002 PN:01 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:16 } { CA-SM Ports:02 SystemGUID:0002c90300071dab NodeGUID:0002c90300071da8 PortGUID:0002c90300071da9 VenID:000002C9 DevID:673C0000 Rev:000000B0 {MT25408 ConnectX Mellanox Technologies} LID:0001 PN:01 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:01 } { SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:01 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:02 } { SW Ports:20 SystemGUID:002264ffff34e9b8 NodeGUID:002264ffff34e9b8 PortGUID:002264ffff34e9b8 VenID:000002C9 DevID:BD360000 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:0009 PN:02 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:11 } { CA Ports:02 SystemGUID:24be05ffff891083 NodeGUID:24be05ffff891080 PortGUID:24be05ffff891082 VenID:000002C9 DevID:10030000 Rev:00000000 {TD-WSS01} LID:0007 PN:02 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:12 } { CA Ports:02 SystemGUID:24be05ffff891063 NodeGUID:24be05ffff891060 PortGUID:24be05ffff891062 VenID:000002C9 DevID:10030000 Rev:00000000 {TD-WSS02} LID:0005 PN:02 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:13 } { CA Ports:02 SystemGUID:0002c9030007213f NodeGUID:0002c9030007213c PortGUID:0002c9030007213e VenID:000002C9 DevID:673C0000 Rev:000000B0 {td-lss02 mlx4_0} LID:0003 PN:02 } PHY=4x LOG=ACT SPD=10
+{ SW Ports:20 SystemGUID:002264ffff34e9c8 NodeGUID:002264ffff34e9c8 PortGUID:002264ffff34e9c8 VenID:0002C9 DevID:BD36 Rev:000000A0 {Infiniscale-IV Mellanox Technologies} LID:000A PN:16 } { CA Ports:02 SystemGUID:0002c90300071dab NodeGUID:0002c90300071da8 PortGUID:0002c90300071daa VenID:000002C9 DevID:673C0000 Rev:000000B0 {MT25408 ConnectX Mellanox Technologies} LID:0008 PN:02 } PHY=4x LOG=ACT SPD=10
+
+=======================================================================================================
+Vendor      : Ty : #  : Sta : LID  : LMC : MTU  : LWA : LSA  : Port GUID        : Neighbor Port (Port #)
+Mellanox    : CA : 01 : ACT : 0002 :  0  : 2048 : 4x  : 10   : 0002c9030007213d : 002264ffff34e9b8 (13)
+Mellanox    : CA : 02 : ACT : 0003 :  0  : 2048 : 4x  : 10   : 0002c9030007213e : 002264ffff34e9c8 (13)
+------------------------------------------------------------------------------------------------------
+Unknown     : CA : 01 : ACT : 0004 :  0  : 4096 : 4x  : 10   : 24be05ffff891061 : 002264ffff34e9b8 (12)
+Unknown     : CA : 02 : ACT : 0005 :  0  : 4096 : 4x  : 10   : 24be05ffff891062 : 002264ffff34e9c8 (12)
+------------------------------------------------------------------------------------------------------
+Unknown     : CA : 01 : ACT : 0006 :  0  : 4096 : 4x  : 10   : 24be05ffff891081 : 002264ffff34e9b8 (11)
+Unknown     : CA : 02 : ACT : 0007 :  0  : 4096 : 4x  : 10   : 24be05ffff891082 : 002264ffff34e9c8 (11)
+------------------------------------------------------------------------------------------------------
+Mellanox    : CA : 01 : ACT : 0001 :  0  : 4096 : 4x  : 10   * 0002c90300071da9 * 002264ffff34e9b8 (16)
+Mellanox    : CA : 02 : ACT : 0008 :  0  : 4096 : 4x  : 10   : 0002c90300071daa : 002264ffff34e9c8 (16)
+------------------------------------------------------------------------------------------------------
+Unknown     : SW : 00 :     : 0009 :  0  :      :     :      : 002264ffff34e9b8 :
+Unknown     : SW : 01 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9b8 : 002264ffff34e9c8 (01)
+Unknown     : SW : 02 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9b8 : 002264ffff34e9c8 (02)
+Unknown     : SW : 03 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 04 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 05 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 06 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 07 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 08 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 09 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 0A : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 0B : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 0C : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 0D : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 0E : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 0F : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 10 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 11 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9b8 : 24be05ffff891081 (01)
+Unknown     : SW : 12 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9b8 : 24be05ffff891061 (01)
+Unknown     : SW : 13 : ACT :      :     : 2048 : 4x  : 10   : 002264ffff34e9b8 : 0002c9030007213d (01)
+Unknown     : SW : 14 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 15 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 16 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9b8 : 0002c90300071da9 (01)
+Unknown     : SW : 17 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 18 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 19 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 1A : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 1B : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 1C : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 1D : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 1E : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 1F : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+Unknown     : SW : 20 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9b8 :
+------------------------------------------------------------------------------------------------------
+Unknown     : SW : 00 :     : 000A :  0  :      :     :      : 002264ffff34e9c8 :
+Unknown     : SW : 01 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9c8 : 002264ffff34e9b8 (01)
+Unknown     : SW : 02 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9c8 : 002264ffff34e9b8 (02)
+Unknown     : SW : 03 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 04 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 05 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 06 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 07 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 08 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 09 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 0A : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 0B : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 0C : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 0D : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 0E : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 0F : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 10 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 11 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9c8 : 24be05ffff891082 (02)
+Unknown     : SW : 12 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9c8 : 24be05ffff891062 (02)
+Unknown     : SW : 13 : ACT :      :     : 2048 : 4x  : 10   : 002264ffff34e9c8 : 0002c9030007213e (02)
+Unknown     : SW : 14 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 15 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 16 : ACT :      :     : 4096 : 4x  : 10   : 002264ffff34e9c8 : 0002c90300071daa (02)
+Unknown     : SW : 17 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 18 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 19 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 1A : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 1B : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 1C : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 1D : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 1E : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 1F : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+Unknown     : SW : 20 : DWN :      :     : ???  : ??? : ???? : 002264ffff34e9c8 :
+------------------------------------------------------------------------------------------------------
+Feb 14 20:27:56 860834 [FA96A700] 0x02 -> SUBNET UP
+Feb 14 20:27:56 860839 [FA96A700] 0x04 -> state_mgr_up_msg:
+
+
+******************************************************************
+*************************** SUBNET UP ****************************
+******************************************************************
+
+
+Feb 14 20:27:57 996303 [FC96E700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c9030007213e Port 0x0002c9030007213e joining MC group ff12:401b:ffff::ffff:ffff (mlid 0xc000)
+Feb 14 20:27:57 996338 [FC96E700] 0x02 -> log_notice: Reporting Informational Notice "New mcast group created", MGID:ff12:401b:ffff::ffff:ffff
+Feb 14 20:27:57 996427 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: MLID 0xC000 has 1 members - nothing to do
+Feb 14 20:27:57 996492 [FB96C700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c9030007213d Port 0x0002c9030007213d joining MC group ff12:401b:ffff::ffff:ffff (mlid 0xc000)
+Feb 14 20:27:57 996601 [FA96A700] 0x04 -> mcast_mgr_find_optimal_switch: Best switch is 0x2264ffff34e9b8 (Infiniscale-IV Mellanox Technologies), hops = 2.000000
+Feb 14 20:27:57 996611 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC000 through switch 0x2264ffff34e9b8 Infiniscale-IV Mellanox Technologies, 2 nodes at depth 0
+Feb 14 20:27:57 996619 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC000 through switch 0x2264ffff34e9c8 Infiniscale-IV Mellanox Technologies, 1 nodes at depth 1
+Feb 14 20:27:57 996624 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: Configured MLID 0xC000 for 2 ports, max tree depth = 2
+Feb 14 20:27:57 997328 [FD16F700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c9030007213e Port 0x0002c9030007213e joining MC group ff12:601b:ffff::1:ff07:213e (mlid 0xc001)
+Feb 14 20:27:57 997346 [FD16F700] 0x02 -> log_notice: Reporting Informational Notice "New mcast group created", MGID:ff12:601b:ffff::1:ff07:213e
+Feb 14 20:27:57 997543 [FE972700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c9030007213d Port 0x0002c9030007213d joining MC group ff12:601b:ffff::1:ff07:213d (mlid 0xc002)
+Feb 14 20:27:57 997556 [FE972700] 0x02 -> log_notice: Reporting Informational Notice "New mcast group created", MGID:ff12:601b:ffff::1:ff07:213d
+Feb 14 20:27:57 997960 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: MLID 0xC001 has 1 members - nothing to do
+Feb 14 20:27:57 997970 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: MLID 0xC002 has 1 members - nothing to do
+Feb 14 20:27:57 998134 [FF173700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c9030007213e Port 0x0002c9030007213e joining MC group ff12:601b:ffff::1 (mlid 0xc003)
+Feb 14 20:27:57 998143 [FF173700] 0x02 -> log_notice: Reporting Informational Notice "New mcast group created", MGID:ff12:601b:ffff::1
+Feb 14 20:27:57 998369 [FE171700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c9030007213d Port 0x0002c9030007213d joining MC group ff12:601b:ffff::1 (mlid 0xc003)
+Feb 14 20:27:57 998777 [FE972700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c9030007213e Port 0x0002c9030007213e joining MC group ff12:401b:ffff::1 (mlid 0xc004)
+Feb 14 20:27:57 998787 [FE972700] 0x02 -> log_notice: Reporting Informational Notice "New mcast group created", MGID:ff12:401b:ffff::1
+Feb 14 20:27:57 999064 [FC96E700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c9030007213d Port 0x0002c9030007213d joining MC group ff12:401b:ffff::1 (mlid 0xc004)
+Feb 14 20:27:57 999184 [FA96A700] 0x04 -> mcast_mgr_find_optimal_switch: Best switch is 0x2264ffff34e9b8 (Infiniscale-IV Mellanox Technologies), hops = 2.000000
+Feb 14 20:27:57 999190 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC003 through switch 0x2264ffff34e9b8 Infiniscale-IV Mellanox Technologies, 2 nodes at depth 0
+Feb 14 20:27:57 999194 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC003 through switch 0x2264ffff34e9c8 Infiniscale-IV Mellanox Technologies, 1 nodes at depth 1
+Feb 14 20:27:57 999199 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: Configured MLID 0xC003 for 2 ports, max tree depth = 2
+Feb 14 20:27:57 999204 [FA96A700] 0x04 -> mcast_mgr_find_optimal_switch: Best switch is 0x2264ffff34e9b8 (Infiniscale-IV Mellanox Technologies), hops = 2.000000
+Feb 14 20:27:57 999207 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC004 through switch 0x2264ffff34e9b8 Infiniscale-IV Mellanox Technologies, 2 nodes at depth 0
+Feb 14 20:27:57 999210 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC004 through switch 0x2264ffff34e9c8 Infiniscale-IV Mellanox Technologies, 1 nodes at depth 1
+Feb 14 20:27:57 999214 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: Configured MLID 0xC004 for 2 ports, max tree depth = 2
+Feb 14 20:28:00 993941 [FF173700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c90300071da9 Port 0x0002c90300071da9 joining MC group ff12:401b:ffff::ffff:ffff (mlid 0xc000)
+Feb 14 20:28:00 994061 [FA96A700] 0x04 -> mcast_mgr_find_optimal_switch: Best switch is 0x2264ffff34e9b8 (Infiniscale-IV Mellanox Technologies), hops = 2.000000
+Feb 14 20:28:00 994071 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC000 through switch 0x2264ffff34e9b8 Infiniscale-IV Mellanox Technologies, 3 nodes at depth 0
+Feb 14 20:28:00 994079 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC000 through switch 0x2264ffff34e9c8 Infiniscale-IV Mellanox Technologies, 1 nodes at depth 1
+Feb 14 20:28:00 994087 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: Configured MLID 0xC000 for 3 ports, max tree depth = 2
+Feb 14 20:28:00 995206 [FC16D700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c90300071da9 Port 0x0002c90300071da9 joining MC group ff12:601b:ffff::1 (mlid 0xc003)
+Feb 14 20:28:00 995227 [FB96C700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c90300071da9 Port 0x0002c90300071da9 joining MC group ff12:601b:ffff::1:ff07:1da9 (mlid 0xc005)
+Feb 14 20:28:00 995240 [FB96C700] 0x02 -> log_notice: Reporting Informational Notice "New mcast group created", MGID:ff12:601b:ffff::1:ff07:1da9
+Feb 14 20:28:00 995264 [FC96E700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c90300071da9 Port 0x0002c90300071da9 joining MC group ff12:401b:ffff::1 (mlid 0xc004)
+Feb 14 20:28:00 995914 [FE171700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c90300071daa Port 0x0002c90300071daa joining MC group ff12:401b:ffff::ffff:ffff (mlid 0xc000)
+Feb 14 20:28:00 995936 [FA96A700] 0x04 -> mcast_mgr_find_optimal_switch: Best switch is 0x2264ffff34e9b8 (Infiniscale-IV Mellanox Technologies), hops = 2.000000
+Feb 14 20:28:00 995943 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC000 through switch 0x2264ffff34e9b8 Infiniscale-IV Mellanox Technologies, 4 nodes at depth 0
+Feb 14 20:28:00 995948 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC000 through switch 0x2264ffff34e9c8 Infiniscale-IV Mellanox Technologies, 2 nodes at depth 1
+Feb 14 20:28:00 995953 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: Configured MLID 0xC000 for 4 ports, max tree depth = 2
+Feb 14 20:28:00 995958 [FA96A700] 0x04 -> mcast_mgr_find_optimal_switch: Best switch is 0x2264ffff34e9b8 (Infiniscale-IV Mellanox Technologies), hops = 2.000000
+Feb 14 20:28:00 995962 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC003 through switch 0x2264ffff34e9b8 Infiniscale-IV Mellanox Technologies, 3 nodes at depth 0
+Feb 14 20:28:00 995964 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC003 through switch 0x2264ffff34e9c8 Infiniscale-IV Mellanox Technologies, 1 nodes at depth 1
+Feb 14 20:28:00 995968 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: Configured MLID 0xC003 for 3 ports, max tree depth = 2
+Feb 14 20:28:00 995973 [FA96A700] 0x04 -> mcast_mgr_find_optimal_switch: Best switch is 0x2264ffff34e9b8 (Infiniscale-IV Mellanox Technologies), hops = 2.000000
+Feb 14 20:28:00 995978 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC004 through switch 0x2264ffff34e9b8 Infiniscale-IV Mellanox Technologies, 3 nodes at depth 0
+Feb 14 20:28:00 995982 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC004 through switch 0x2264ffff34e9c8 Infiniscale-IV Mellanox Technologies, 1 nodes at depth 1
+Feb 14 20:28:00 995986 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: Configured MLID 0xC004 for 3 ports, max tree depth = 2
+Feb 14 20:28:00 995990 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: MLID 0xC005 has 1 members - nothing to do
+Feb 14 20:28:00 996479 [FE972700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c90300071daa Port 0x0002c90300071daa joining MC group ff12:601b:ffff::1 (mlid 0xc003)
+Feb 14 20:28:00 996514 [FB96C700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c90300071daa Port 0x0002c90300071daa joining MC group ff12:401b:ffff::1 (mlid 0xc004)
+Feb 14 20:28:00 996528 [FC96E700] 0x04 -> osm_mgrp_add_port: GUID 0x0002c90300071daa Port 0x0002c90300071daa joining MC group ff12:601b:ffff::1:ff07:1daa (mlid 0xc006)
+Feb 14 20:28:00 996537 [FC96E700] 0x02 -> log_notice: Reporting Informational Notice "New mcast group created", MGID:ff12:601b:ffff::1:ff07:1daa
+Feb 14 20:28:00 997146 [FA96A700] 0x04 -> mcast_mgr_find_optimal_switch: Best switch is 0x2264ffff34e9b8 (Infiniscale-IV Mellanox Technologies), hops = 2.000000
+Feb 14 20:28:00 997154 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC003 through switch 0x2264ffff34e9b8 Infiniscale-IV Mellanox Technologies, 4 nodes at depth 0
+Feb 14 20:28:00 997159 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC003 through switch 0x2264ffff34e9c8 Infiniscale-IV Mellanox Technologies, 2 nodes at depth 1
+Feb 14 20:28:00 997162 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: Configured MLID 0xC003 for 4 ports, max tree depth = 2
+Feb 14 20:28:00 997202 [FA96A700] 0x04 -> mcast_mgr_find_optimal_switch: Best switch is 0x2264ffff34e9b8 (Infiniscale-IV Mellanox Technologies), hops = 2.000000
+Feb 14 20:28:00 997208 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC004 through switch 0x2264ffff34e9b8 Infiniscale-IV Mellanox Technologies, 4 nodes at depth 0
+Feb 14 20:28:00 997211 [FA96A700] 0x04 -> mcast_mgr_branch: Routing MLID 0xC004 through switch 0x2264ffff34e9c8 Infiniscale-IV Mellanox Technologies, 2 nodes at depth 1
+Feb 14 20:28:00 997214 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: Configured MLID 0xC004 for 4 ports, max tree depth = 2
+Feb 14 20:28:00 997217 [FA96A700] 0x04 -> mcast_mgr_build_spanning_tree: MLID 0xC006 has 1 members - nothing to do
+Feb 14 20:28:05 918778 [FA96A700] 0x04 -> state_mgr_light_sweep_start:
+
+
+******************************************************************
+********************* INITIATING LIGHT SWEEP *********************
+******************************************************************
+
+
+Feb 14 20:28:05 919239 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********************** LIGHT SWEEP COMPLETE **********************
+******************************************************************
+
+
+Feb 14 20:28:15 918955 [FA96A700] 0x04 -> state_mgr_light_sweep_start:
+
+
+******************************************************************
+********************* INITIATING LIGHT SWEEP *********************
+******************************************************************
+
+
+Feb 14 20:28:15 919311 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********************** LIGHT SWEEP COMPLETE **********************
+******************************************************************
+
+
+Feb 14 20:28:25 919092 [FA96A700] 0x04 -> state_mgr_light_sweep_start:
+
+
+******************************************************************
+********************* INITIATING LIGHT SWEEP *********************
+******************************************************************
+
+
+Feb 14 20:28:25 919387 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********************** LIGHT SWEEP COMPLETE **********************
+******************************************************************
+
+
+Feb 14 20:28:30 620518 [FE171700] 0x01 -> validate_requested_mgid: ERR 1B28: Requested MGID invalid, uses Reserved Flags: flags=0xE
+Feb 14 20:28:32 620961 [FD970700] 0x01 -> validate_requested_mgid: ERR 1B28: Requested MGID invalid, uses Reserved Flags: flags=0xE
+Feb 14 20:28:32 638891 [FD16F700] 0x01 -> validate_requested_mgid: ERR 1B28: Requested MGID invalid, uses Reserved Flags: flags=0xE
+Feb 14 20:28:34 639203 [FF173700] 0x01 -> validate_requested_mgid: ERR 1B28: Requested MGID invalid, uses Reserved Flags: flags=0xE
+Feb 14 20:28:35 919316 [FA96A700] 0x04 -> state_mgr_light_sweep_start:
+
+
+******************************************************************
+********************* INITIATING LIGHT SWEEP *********************
+******************************************************************
+
+
+Feb 14 20:28:35 919661 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********************** LIGHT SWEEP COMPLETE **********************
+******************************************************************
+
+
+Feb 14 20:28:45 919485 [FA96A700] 0x04 -> state_mgr_light_sweep_start:
+
+
+******************************************************************
+********************* INITIATING LIGHT SWEEP *********************
+******************************************************************
+
+
+Feb 14 20:28:45 919735 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********************** LIGHT SWEEP COMPLETE **********************
+******************************************************************
+
+
+Feb 14 20:28:55 919700 [FA96A700] 0x04 -> state_mgr_light_sweep_start:
+
+
+******************************************************************
+********************* INITIATING LIGHT SWEEP *********************
+******************************************************************
+
+
+Feb 14 20:28:55 919973 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********************** LIGHT SWEEP COMPLETE **********************
+******************************************************************
+
+
+Feb 14 20:29:05 919882 [FA96A700] 0x04 -> state_mgr_light_sweep_start:
+
+
+******************************************************************
+********************* INITIATING LIGHT SWEEP *********************
+******************************************************************
+
+
+Feb 14 20:29:05 920185 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********************** LIGHT SWEEP COMPLETE **********************
+******************************************************************
+
+
+Feb 14 20:29:15 920065 [FA96A700] 0x04 -> state_mgr_light_sweep_start:
+
+
+******************************************************************
+********************* INITIATING LIGHT SWEEP *********************
+******************************************************************
+
+
+Feb 14 20:29:15 920400 [FA96A700] 0x04 -> do_sweep:
+
+
+******************************************************************
+********************** LIGHT SWEEP COMPLETE **********************
+******************************************************************
+
+

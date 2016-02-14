@@ -4,6 +4,7 @@ machine:
     # If you change this, you must also change src/Dockerfile.
     OPENSM_RPM_VERSION: 3.3.19-1.el7.x86_64
     TAG: ${OPENSM_RPM_VERSION}-$(date +%Y%m%dT%H%M)-git-${CIRCLE_SHA1:0:7}
+    TAG2: ${CIRCLE_PR_USERNAME}_${CIRCLE_BRANCH/\//_}
     BATS_VER: 0.4.0
   services:
     - docker
@@ -39,4 +40,12 @@ deployment:
       - docker tag opensm jumanjiman/opensm:latest
       - docker push jumanjiman/opensm:${TAG}
       - docker push jumanjiman/opensm:latest
+      - docker logout
+  pulls:
+    branch: /^(?!master).*$/
+    commands:
+      # Publish the image with TAG2 so user can smoke-test manually on an IB host.
+      - docker login -e ${mail} -u ${user} -p ${pass}
+      - docker tag opensm jumanjiman/opensm:${TAG2}
+      - docker push jumanjiman/opensm:${TAG2}
       - docker logout
