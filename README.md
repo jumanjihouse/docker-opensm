@@ -71,6 +71,10 @@ On a host with Docker:
       -v /lib/modules:/lib/modules:ro \
       jumanjiman/opensm
 
+On a host with IB, `docker logs <cid>` could show output
+similar to [`test/opensm.log`](test/opensm.log), which was
+obtained on an unconfigured, tiny test fabric.
+
 
 ### Run diagnostics
 
@@ -120,9 +124,6 @@ Output resembles:
 
 :warning: I need to figure out how to run acceptance tests
 on a host without infiniband devices (such as CircleCI).
-On a host with IB, `docker logs <cid>` could show output
-similar to [`test/opensm.log`](test/opensm.log), which was
-obtained on an unconfigured, tiny test fabric.
 
 
 License
