@@ -78,6 +78,7 @@ The image contains useful infiniband diagnostic utilities from these packages:
 
 * ibutils
 * infiniband-diags
+* qperf
 
 You can run the tools in two ways:
 
@@ -103,7 +104,7 @@ Run the test harness:
 The test harness uses [BATS](https://github.com/sstephenson/bats).
 Output resembles:
 
-    1..10
+    1..12
     ok 1 LICENSE file exists
     ok 2 image exists
     ok 3 image contains opensm package
@@ -113,7 +114,9 @@ Output resembles:
     ok 7 image does not contain doc files
     ok 8 image contains ibutils package
     ok 9 ibdiagnet is in path
-    ok 10 sminfo poll interval is 5 seconds
+    ok 10 image contains qperf package
+    ok 11 qperf is in path
+    ok 12 sminfo poll interval is 5 seconds
 
 :warning: I need to figure out how to run acceptance tests
 on a host without infiniband devices (such as CircleCI).

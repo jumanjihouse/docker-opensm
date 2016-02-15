@@ -8,6 +8,7 @@ RUN yum -y install \
       infiniband-diags \
       opensm-${OPENSM_RPM_VERSION} \
       patch \
+      qperf \
       && \
     yum clean all
 

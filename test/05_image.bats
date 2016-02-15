@@ -40,3 +40,13 @@
   run docker run --entrypoint bash opensm command -v ibdiagnet
   [ ${status} -eq 0 ]
 }
+
+@test "image contains qperf package" {
+  run docker run --entrypoint rpm opensm -q qperf
+  [ ${status} -eq 0 ]
+}
+
+@test "qperf is in path" {
+  run docker run --entrypoint bash opensm command -v qperf
+  [ ${status} -eq 0 ]
+}
