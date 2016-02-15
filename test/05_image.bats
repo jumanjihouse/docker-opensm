@@ -125,3 +125,33 @@
   run docker run --entrypoint bash opensm command -v ibv_devinfo
   [ ${status} -eq 0 ]
 }
+
+@test "\"libibcommon\" is installed" {
+  run docker run --entrypoint rpm opensm -q libibcommon
+  [ ${status} -eq 0 ]
+}
+
+@test "\"dapl\" is installed" {
+  run docker run --entrypoint rpm opensm -q dapl
+  [ ${status} -eq 0 ]
+}
+
+@test "\"compat-dapl\" is installed" {
+  run docker run --entrypoint rpm opensm -q compat-dapl
+  [ ${status} -eq 0 ]
+}
+
+@test "\"dapl-utils\" is installed" {
+  run docker run --entrypoint rpm opensm -q dapl-utils
+  [ ${status} -eq 0 ]
+}
+
+@test "\"compat-dapl-utils\" is installed" {
+  run docker run --entrypoint rpm opensm -q compat-dapl-utils
+  [ ${status} -eq 0 ]
+}
+
+@test "\"mstflint\" is installed" {
+  run docker run --entrypoint rpm opensm -q mstflint
+  [ ${status} -eq 0 ]
+}

@@ -108,7 +108,7 @@ Run the test harness:
 The test harness uses [BATS](https://github.com/sstephenson/bats).
 Output resembles:
 
-    1..27
+    1..33
     ok 1 LICENSE file exists
     ok 2 image exists
     ok 3 image contains opensm package
@@ -135,7 +135,13 @@ Output resembles:
     ok 24 "libibverbs" is installed
     ok 25 "libibverbs-utils" is installed
     ok 26 "ibv_devinfo" is in path
-    ok 27 sminfo poll interval is 5 seconds
+    ok 27 "libibcommon" is installed
+    ok 28 "dapl" is installed
+    ok 29 "compat-dapl" is installed
+    ok 30 "dapl-utils" is installed
+    ok 31 "compat-dapl-utils" is installed
+    ok 32 "mstflint" is installed
+    ok 33 sminfo poll interval is 5 seconds
 
 :warning: I need to figure out how to run acceptance tests
 on a host without infiniband devices (such as CircleCI).
