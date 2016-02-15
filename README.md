@@ -32,16 +32,33 @@ If all tests pass on master branch in the unattended test harness,
 it pushes the built images to the Docker hub.
 
 
-Build locally
--------------
+How-to
+------
+
+
+### Build locally
 
 On a host with Docker:
 
     docker build --rm -t opensm src/
 
 
-Run
----
+### Pull an already-built image
+
+These images are built as part of the test harness on CircleCI.
+If all tests pass on master branch, then the image is pushed into the docker hub.
+
+    docker pull jumanjiman/opensm:latest
+
+The `latest` tag always points to the latest version.
+Additional tags include `${opensm_rpm_version}-${build_datetime}-${git_hash}`
+to correlate any image to both the opensm version and a git commit from this repo.
+
+We push the tags automatically from the test harness, and
+we occasionally delete old tags from the Docker hub by hand.
+
+
+### Run OpenSM
 
 On a host with Docker:
 
@@ -55,8 +72,7 @@ On a host with Docker:
       jumanjiman/opensm
 
 
-Diagnostic utilities
---------------------
+### Run diagnostics
 
 The image contains the infiniband-diags package.
 You can run the tools in two ways:
@@ -74,8 +90,7 @@ Sample output from `ibnetdiscover` (one of the utils) is shown at
 [`test/ibnetdiscover.out`](test/ibnetdiscover.out).
 
 
-Test
-----
+### Test
 
 Run the test harness:
 
