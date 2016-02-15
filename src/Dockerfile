@@ -7,6 +7,7 @@ RUN yum -y install \
       ibutils \
       infiniband-diags \
       infinipath-psm libcxgb3 libcxgb4 libipathverbs libmthca libmlx4 libmlx5 libnes libocrdma \
+      libibverbs libibverbs-utils \
       librdmacm-utils ibacm \
       opensm-${OPENSM_RPM_VERSION} \
       patch \

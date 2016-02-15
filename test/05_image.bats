@@ -110,3 +110,18 @@
   run docker run --entrypoint rpm opensm -q ibacm
   [ ${status} -eq 0 ]
 }
+
+@test "\"libibverbs\" is installed" {
+  run docker run --entrypoint rpm opensm -q libibverbs
+  [ ${status} -eq 0 ]
+}
+
+@test "\"libibverbs-utils\" is installed" {
+  run docker run --entrypoint rpm opensm -q libibverbs-utils
+  [ ${status} -eq 0 ]
+}
+
+@test "\"ibv_devinfo\" is in path" {
+  run docker run --entrypoint bash opensm command -v ibv_devinfo
+  [ ${status} -eq 0 ]
+}
