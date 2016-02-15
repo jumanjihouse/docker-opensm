@@ -25,5 +25,8 @@
 
 @test "image does not contain doc files" {
   run docker run --entrypoint find opensm /usr/share/man/ -type f
-  [[ ${#lines[@]} ]]
+  # circleci collects output.
+  delete="WARNING: Your kernel does not support memory swappiness capabilities, memory swappiness discarded."
+  lines=(${lines[@]/$delete})
+  [[ ${#lines[@]} -eq 0 ]]
 }
