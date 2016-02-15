@@ -2,6 +2,36 @@ OpenSM Infiniband Subnet Manager
 ================================
 
 
+[![Image Size](https://img.shields.io/imagelayers/image-size/jumanjiman/opensm/latest.svg)](https://imagelayers.io/?images=jumanjiman/opensm:latest 'View image size and layers')&nbsp;
+[![Image Layers](https://img.shields.io/imagelayers/layers/jumanjiman/opensm/latest.svg)](https://imagelayers.io/?images=jumanjiman/opensm:latest 'View image size and layers')&nbsp;
+[![Docker Registry](https://img.shields.io/docker/pulls/jumanjiman/opensm.svg)](https://registry.hub.docker.com/u/jumanjiman/opensm)&nbsp;
+[![Circle CI](https://circleci.com/gh/jumanjihouse/docker-opensm.png?circle-token=49cfeda576ec04d63924da128e314e8796b173fa)](https://circleci.com/gh/jumanjihouse/docker-opensm/tree/master 'View CI builds')
+
+Project URL: [https://github.com/jumanjihouse/docker-opensm](https://github.com/jumanjihouse/docker-opensm)
+<br />
+Docker hub: [https://registry.hub.docker.com/u/jumanjiman/opensm/](https://registry.hub.docker.com/u/jumanjiman/opensm/)
+
+
+Overview
+--------
+
+OpenSM is an infiniband subnet manager from the
+OpenFabrics Enterprise Distribution (OFED).
+This repo provides a way to build OpenSM
+into a docker image and run it as a container.
+
+
+### Build integrity
+
+The repo is set up to build the image on CircleCI.
+
+![workflow](assets/docker_hub_workflow.png)
+
+An unattended test harness runs simple test scripts.
+If all tests pass on master branch in the unattended test harness,
+it pushes the built images to the Docker hub.
+
+
 Build locally
 -------------
 
