@@ -108,7 +108,7 @@ Run the test harness:
 The test harness uses [BATS](https://github.com/sstephenson/bats).
 Output resembles:
 
-    1..12
+    1..21
     ok 1 LICENSE file exists
     ok 2 image exists
     ok 3 image contains opensm package
@@ -120,7 +120,16 @@ Output resembles:
     ok 9 ibdiagnet is in path
     ok 10 image contains qperf package
     ok 11 qperf is in path
-    ok 12 sminfo poll interval is 5 seconds
+    ok 12 userspace ib driver "infinipath-psm" is installed
+    ok 13 userspace ib driver "libcxgb3" is installed
+    ok 14 userspace ib driver "libcxgb4" is installed
+    ok 15 userspace ib driver "libipathverbs" is installed
+    ok 16 userspace ib driver "libmthca" is installed
+    ok 17 userspace ib driver "libmlx4" is installed
+    ok 18 userspace ib driver "libmlx5" is installed
+    ok 19 userspace ib driver "libnes" is installed
+    ok 20 userspace ib driver "libocrdma" is installed
+    ok 21 sminfo poll interval is 5 seconds
 
 :warning: I need to figure out how to run acceptance tests
 on a host without infiniband devices (such as CircleCI).
