@@ -4,6 +4,7 @@ FROM centos:7
 ENV OPENSM_RPM_VERSION="3.3.19-1.el7.x86_64"
 
 RUN yum -y install \
+      ibutils \
       infiniband-diags \
       opensm-${OPENSM_RPM_VERSION} \
       patch \

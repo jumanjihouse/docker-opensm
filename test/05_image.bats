@@ -30,3 +30,13 @@
   lines=(${lines[@]/$delete})
   [[ ${#lines[@]} -eq 0 ]]
 }
+
+@test "image contains ibutils package" {
+  run docker run --entrypoint rpm opensm -q ibutils
+  [ ${status} -eq 0 ]
+}
+
+@test "ibdiagnet is in path" {
+  run docker run --entrypoint bash opensm command -v ibdiagnet
+  [ ${status} -eq 0 ]
+}
