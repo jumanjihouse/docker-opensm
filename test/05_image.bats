@@ -95,3 +95,18 @@
   run docker run --entrypoint rpm opensm -q libocrdma
   [ ${status} -eq 0 ]
 }
+
+@test "connection mgmt library \"librdmacm\" is installed" {
+  run docker run --entrypoint rpm opensm -q librdmacm
+  [ ${status} -eq 0 ]
+}
+
+@test "connection mgmt library \"librdmacm-utils\" is installed" {
+  run docker run --entrypoint rpm opensm -q librdmacm-utils
+  [ ${status} -eq 0 ]
+}
+
+@test "connection mgmt library \"ibacm\" is installed" {
+  run docker run --entrypoint rpm opensm -q ibacm
+  [ ${status} -eq 0 ]
+}

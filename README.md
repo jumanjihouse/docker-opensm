@@ -108,7 +108,7 @@ Run the test harness:
 The test harness uses [BATS](https://github.com/sstephenson/bats).
 Output resembles:
 
-    1..21
+    1..24
     ok 1 LICENSE file exists
     ok 2 image exists
     ok 3 image contains opensm package
@@ -129,7 +129,10 @@ Output resembles:
     ok 18 userspace ib driver "libmlx5" is installed
     ok 19 userspace ib driver "libnes" is installed
     ok 20 userspace ib driver "libocrdma" is installed
-    ok 21 sminfo poll interval is 5 seconds
+    ok 21 connection mgmt library "librdmacm" is installed
+    ok 22 connection mgmt library "librdmacm-utils" is installed
+    ok 23 connection mgmt library "ibacm" is installed
+    ok 24 sminfo poll interval is 5 seconds
 
 :warning: I need to figure out how to run acceptance tests
 on a host without infiniband devices (such as CircleCI).
