@@ -1,23 +1,4 @@
-FROM centos:7
-
-# If you change this version, you must also update circle.yml
-ENV OPENSM_RPM_VERSION="3.3.19-1.el7.x86_64"
-
-RUN yum -y install \
-      compat-dapl compat-dapl-utils \
-      dapl dapl-utils \
-      ibutils \
-      infiniband-diags \
-      infinipath-psm libcxgb3 libcxgb4 libipathverbs libmthca libmlx4 libmlx5 libnes libocrdma \
-      libibcommon \
-      libibverbs libibverbs-utils \
-      librdmacm-utils ibacm \
-      mstflint \
-      opensm-${OPENSM_RPM_VERSION} \
-      patch \
-      qperf \
-      && \
-    yum clean all
+FROM jumanjiman/infiniband:7
 
 # The following environment variables control opensm behavior:
 #

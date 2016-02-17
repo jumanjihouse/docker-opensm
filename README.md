@@ -51,8 +51,9 @@ If all tests pass on master branch, then the image is pushed into the docker hub
     docker pull jumanjiman/opensm:latest
 
 The `latest` tag always points to the latest version.
-Additional tags include `${opensm_rpm_version}-${build_datetime}-${git_hash}`
+Additional tags include `7-${build_datetime}-${git_hash}`
 to correlate any image to both the opensm version and a git commit from this repo.
+The `7` in the tag refers to the fact that this image is based on Centos 7.
 
 We push the tags automatically from the test harness, and
 we occasionally delete old tags from the Docker hub by hand.
