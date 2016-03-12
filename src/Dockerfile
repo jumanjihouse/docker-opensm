@@ -1,4 +1,4 @@
-FROM jumanjiman/infiniband:7
+FROM jumanjiman/infiniband:7-20160311T2137-git-5ddacd5
 
 # The following environment variables control opensm behavior:
 #
