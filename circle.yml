@@ -4,6 +4,9 @@ machine:
     TAG: 7-$(date +%Y%m%dT%H%M)-git-${CIRCLE_SHA1:0:7}
     TAG2: ${CIRCLE_PR_USERNAME}_${CIRCLE_BRANCH/\//_}
     BATS_VER: 0.4.0
+  pre:
+    - sudo curl -L -o /usr/bin/docker 'http://s3-external-1.amazonaws.com/circle-downloads/docker-1.9.1-circleci-cp-workaround'
+    - sudo chmod 0755 /usr/bin/docker
   services:
     - docker
 
@@ -22,7 +25,7 @@ dependencies:
 
 test:
   pre:
-    - docker build -t opensm src/
+    - script/build
   override:
     - bats test/*.bats
 
@@ -39,6 +42,7 @@ deployment:
       - docker push jumanjiman/opensm:${TAG}
       - docker push jumanjiman/opensm:latest
       - docker logout
+      - curl -X POST 'https://hooks.microbadger.com/images/jumanjiman/opensm/czAMGe3xllWy_n662jR37rnQT58='
   pulls:
     branch: /^(?!master).*$/
     commands:

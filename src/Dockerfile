@@ -1,5 +1,19 @@
 FROM jumanjiman/infiniband:7-20160311T2137-git-5ddacd5
 
+ARG BUILD_DATE
+ARG VCS_REF
+
+LABEL \
+    org.label-schema.name="jumanjiman/opensm" \
+    org.label-schema.description="Infiniband subnet manager" \
+    org.label-schema.url="https://github.com/jumanjihouse/docker-opensm" \
+    org.label-schema.vcs-url="https://github.com/jumanjihouse/docker-opensm.git" \
+    org.label-schema.docker.dockerfile="/src/Dockerfile" \
+    org.label-schema.vcs-type="Git" \
+    org.label-schema.license="GPLv2" \
+    org.label-schema.build-date=$BUILD_DATE \
+    org.label-schema.vcs-ref=$VCS_REF
+
 # The following environment variables control opensm behavior:
 #
 # OSM_TMP_DIR: controls the directory in which the temporary files
