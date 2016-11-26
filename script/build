@@ -3,8 +3,6 @@ set -e
 
 export DATE=$(date +%Y%m%dT%H%M)
 
-env | sort
-
 docker build \
   --build-arg BUILD_DATE=${DATE} \
   --build-arg VCS_REF=${CIRCLE_SHA1:0:7} \
