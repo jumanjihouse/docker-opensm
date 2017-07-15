@@ -25,7 +25,7 @@ dependencies:
 
 test:
   pre:
-    - script/build
+    - ci/build
   override:
     - bats test/*.bats
 
