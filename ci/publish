@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+. ci/vars
+
+docker login -u ${user} -p ${pass}
+docker tag opensm jumanjiman/opensm:${TAG}
+docker tag opensm jumanjiman/opensm:latest
+docker push jumanjiman/opensm:${TAG}
+docker push jumanjiman/opensm:latest
+docker logout
+
+curl -X POST 'https://hooks.microbadger.com/images/jumanjiman/opensm/czAMGe3xllWy_n662jR37rnQT58='
