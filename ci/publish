@@ -1,7 +1,9 @@
 #!/bin/sh
 set -e
 
-docker login -e ${mail} -u ${user} -p ${pass}
+. ci/vars
+
+docker login -u ${user} -p ${pass}
 docker tag opensm jumanjiman/opensm:${TAG}
 docker tag opensm jumanjiman/opensm:latest
 docker push jumanjiman/opensm:${TAG}
