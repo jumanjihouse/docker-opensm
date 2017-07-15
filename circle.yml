@@ -27,7 +27,7 @@ test:
   pre:
     - ci/build
   override:
-    - bats test/*.bats
+    - ci/test
 
 # https://circleci.com/docs/configuration#deployment
 # https://circleci.com/docs/environment-variables
