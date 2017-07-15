@@ -36,18 +36,4 @@ deployment:
     branch: master
     owner: jumanjihouse
     commands:
-      - docker login -e ${mail} -u ${user} -p ${pass}
-      - docker tag opensm jumanjiman/opensm:${TAG}
-      - docker tag opensm jumanjiman/opensm:latest
-      - docker push jumanjiman/opensm:${TAG}
-      - docker push jumanjiman/opensm:latest
-      - docker logout
-      - curl -X POST 'https://hooks.microbadger.com/images/jumanjiman/opensm/czAMGe3xllWy_n662jR37rnQT58='
-  pulls:
-    branch: /^(?!master).*$/
-    commands:
-      # Publish the image with TAG2 so user can smoke-test manually on an IB host.
-      - docker login -e ${mail} -u ${user} -p ${pass}
-      - docker tag opensm jumanjiman/opensm:${TAG2}
-      - docker push jumanjiman/opensm:${TAG2}
-      - docker logout
+      - ci/publish
