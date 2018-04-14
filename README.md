@@ -141,40 +141,34 @@ Output resembles:
     [shellcheck] Test shell scripts with shellcheck..............................................Passed
     [shfmt] Check shell style with shfmt.........................................................Passed
 
-    1..33
-    ok 1 LICENSE file exists
-    ok 2 image exists
-    ok 3 image contains opensm package
-    ok 4 RDMA config allows IPoIB
-    ok 5 RDMA config does not load iSCSI over RDMA
-    ok 6 image contains infiniband-diags package
-    ok 7 image does not contain doc files
-    ok 8 image contains ibutils package
-    ok 9 ibdiagnet is in path
-    ok 10 image contains qperf package
-    ok 11 qperf is in path
-    ok 12 userspace ib driver "infinipath-psm" is installed
-    ok 13 userspace ib driver "libcxgb3" is installed
-    ok 14 userspace ib driver "libcxgb4" is installed
-    ok 15 userspace ib driver "libipathverbs" is installed
-    ok 16 userspace ib driver "libmthca" is installed
-    ok 17 userspace ib driver "libmlx4" is installed
-    ok 18 userspace ib driver "libmlx5" is installed
-    ok 19 userspace ib driver "libnes" is installed
-    ok 20 userspace ib driver "libocrdma" is installed
-    ok 21 connection mgmt library "librdmacm" is installed
-    ok 22 connection mgmt library "librdmacm-utils" is installed
-    ok 23 connection mgmt library "ibacm" is installed
-    ok 24 "libibverbs" is installed
-    ok 25 "libibverbs-utils" is installed
-    ok 26 "ibv_devinfo" is in path
-    ok 27 "libibcommon" is installed
-    ok 28 "dapl" is installed
-    ok 29 "compat-dapl" is installed
-    ok 30 "dapl-utils" is installed
-    ok 31 "compat-dapl-utils" is installed
-    ok 32 "mstflint" is installed
-    ok 33 sminfo poll interval is 5 seconds
+     ✓ LICENSE file exists
+     ✓ image exists
+     ✓ image contains opensm package
+     ✓ RDMA config allows IPoIB
+     ✓ RDMA config does not load iSCSI over RDMA
+     ✓ image contains infiniband-diags package
+     ✓ image does not contain doc files
+     ✓ image contains ibutils package
+     ✓ ibdiagnet is in path
+     ✓ image contains qperf package
+     ✓ qperf is in path
+     ✓ userspace ib driver "infinipath-psm" is installed
+     ✓ connection mgmt library "librdmacm" is installed
+     ✓ connection mgmt library "librdmacm-utils" is installed
+     ✓ connection mgmt library "ibacm" is installed
+     ✓ "libibverbs" is installed
+     ✓ "libibverbs-utils" is installed
+     ✓ "ibv_devinfo" is in path
+     ✓ "libibcommon" is installed
+     ✓ "dapl" is installed
+     ✓ "compat-dapl" is installed
+     ✓ "dapl-utils" is installed
+     ✓ "compat-dapl-utils" is installed
+     ✓ "mstflint" is installed
+     ✓ sminfo poll interval is 5 seconds
+
+    25 tests, 0 failures
+    ci/test OK
 
 :warning: I need to figure out how to run acceptance tests
 on a host without infiniband devices (such as CircleCI).

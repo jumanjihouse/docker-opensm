@@ -56,46 +56,6 @@
   [ ${status} -eq 0 ]
 }
 
-@test "userspace ib driver \"libcxgb3\" is installed" {
-  run docker run --entrypoint rpm opensm -q libcxgb3
-  [ ${status} -eq 0 ]
-}
-
-@test "userspace ib driver \"libcxgb4\" is installed" {
-  run docker run --entrypoint rpm opensm -q libcxgb4
-  [ ${status} -eq 0 ]
-}
-
-@test "userspace ib driver \"libipathverbs\" is installed" {
-  run docker run --entrypoint rpm opensm -q libipathverbs
-  [ ${status} -eq 0 ]
-}
-
-@test "userspace ib driver \"libmthca\" is installed" {
-  run docker run --entrypoint rpm opensm -q libmthca
-  [ ${status} -eq 0 ]
-}
-
-@test "userspace ib driver \"libmlx4\" is installed" {
-  run docker run --entrypoint rpm opensm -q libmlx4
-  [ ${status} -eq 0 ]
-}
-
-@test "userspace ib driver \"libmlx5\" is installed" {
-  run docker run --entrypoint rpm opensm -q libmlx5
-  [ ${status} -eq 0 ]
-}
-
-@test "userspace ib driver \"libnes\" is installed" {
-  run docker run --entrypoint rpm opensm -q libnes
-  [ ${status} -eq 0 ]
-}
-
-@test "userspace ib driver \"libocrdma\" is installed" {
-  run docker run --entrypoint rpm opensm -q libocrdma
-  [ ${status} -eq 0 ]
-}
-
 @test "connection mgmt library \"librdmacm\" is installed" {
   run docker run --entrypoint rpm opensm -q librdmacm
   [ ${status} -eq 0 ]

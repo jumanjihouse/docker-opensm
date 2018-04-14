@@ -1,4 +1,4 @@
-FROM jumanjiman/infiniband:7-20170715T1818-git-e528491
+FROM jumanjiman/infiniband:7-20180414T1231-git-0c4397a
 
 ARG BUILD_DATE
 ARG VCS_REF
