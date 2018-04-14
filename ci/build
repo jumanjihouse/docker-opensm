@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-cat > ci/vars <<EOF
+cat >ci/vars <<EOF
 export DATE=$(date +%Y%m%dT%H%M)
 export VCS_REF=$(git rev-parse --short HEAD)
 export TAG=7-\${DATE}-git-\${VCS_REF}
@@ -9,8 +9,8 @@ EOF
 . ci/vars
 
 docker build \
-  --build-arg BUILD_DATE=${DATE} \
-  --build-arg VCS_REF=${VCS_REF} \
+  --build-arg BUILD_DATE="${DATE}" \
+  --build-arg VCS_REF="${VCS_REF}" \
   -t opensm src/
 
 echo "Images"

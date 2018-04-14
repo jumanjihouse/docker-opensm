@@ -12,6 +12,18 @@ Project URL: [https://github.com/jumanjihouse/docker-opensm](https://github.com/
 <br />
 Docker hub: [https://registry.hub.docker.com/u/jumanjiman/opensm/](https://registry.hub.docker.com/u/jumanjiman/opensm/)
 
+**Table of Contents**
+
+- [Overview](#overview)
+  - [Build integrity](#build-integrity)
+- [How-to](#how-to)
+  - [Build locally](#build-locally)
+  - [Pull an already-built image](#pull-an-already-built-image)
+  - [Run OpenSM](#run-opensm)
+  - [Run diagnostics](#run-diagnostics)
+  - [Test](#test)
+- [License](#license)
+
 
 Overview
 --------
@@ -105,10 +117,29 @@ Sample output from `ibnetdiscover` (one of the utils) is shown at
 
 Run the test harness:
 
-    bats test/*.bats
+    ci/test
 
-The test harness uses [BATS](https://github.com/sstephenson/bats).
+The test harness requires:
+
+* [BATS](https://github.com/bats-core/bats-core)
+* Python and the `pip` command
+
 Output resembles:
+
+    [yamllint] yamllint..........................................................................Passed
+    [check-added-large-files] Check for added large files........................................Passed
+    [check-case-conflict] Check for case conflicts...............................................Passed
+    [check-executables-have-shebangs] Check that executables have shebangs.......................Passed
+    [check-symlinks] Check for broken symlinks...............................(no files to check)Skipped
+    [check-vcs-permalinks] Check vcs permalinks..................................................Passed
+    [detect-private-key] Detect Private Key......................................................Passed
+    [forbid-crlf] CRLF end-lines checker.........................................................Passed
+    [forbid-tabs] No-tabs checker................................................................Passed
+    [forbid-binary] Forbid binaries..........................................(no files to check)Skipped
+    [git-check] Check for conflict markers and core.whitespace errors............................Passed
+    [git-dirty] Check if the git tree is dirty...................................................Passed
+    [shellcheck] Test shell scripts with shellcheck..............................................Passed
+    [shfmt] Check shell style with shfmt.........................................................Passed
 
     1..33
     ok 1 LICENSE file exists

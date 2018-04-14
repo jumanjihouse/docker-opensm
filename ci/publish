@@ -3,10 +3,11 @@ set -e
 
 . ci/vars
 
-docker login -u ${user} -p ${pass}
-docker tag opensm jumanjiman/opensm:${TAG}
+# shellcheck disable=SC2154
+docker login -u "${user}" -p "${pass}"
+docker tag opensm "jumanjiman/opensm:${TAG}"
 docker tag opensm jumanjiman/opensm:latest
-docker push jumanjiman/opensm:${TAG}
+docker push "jumanjiman/opensm:${TAG}"
 docker push jumanjiman/opensm:latest
 docker logout
 

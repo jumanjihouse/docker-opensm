@@ -1,6 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 . ci/vars
+. ci/bootstrap
 
+pre-commit run --all-files --verbose
 bats test/*.bats
